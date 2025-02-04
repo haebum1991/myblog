@@ -1,0 +1,2 @@
+# haebumblog
+My blog repository
