@@ -1,6 +1,6 @@
 baseurl = "/"
 languageCode = "en-US"
-title = "A Hugo website"
+title = "Leestory"
 theme = "hugo-lithium"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$"]
 
@@ -8,25 +8,20 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$"]
     post = "/:year/:month/:day/:slug/"
 
 [[menu.main]]
-    name = "Home"
-    url = "/post/"
-    weight = 1
-    
-[[menu.main]]
     name = "About"
     url = "/about/"
-    weight = 2
-    
+    weight = 1
+
 [[menu.main]]
     name = "GAM tool"
     url = "/gam-tool/"
-    weight = 3
+    weight = 2
 
 [[menu.main]]
     name = "Resources"
     url = "/resources/"
-    weight = 4
-    
+    weight = 3
+
 [params]
     description = "A website built through Hugo and blogdown."
 

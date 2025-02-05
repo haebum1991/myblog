@@ -1,7 +1,6 @@
 
 ---
 title: ""
-date: "2025-02-04"
 ---
 
 <h2>PhD. Haebum Lee</h2>

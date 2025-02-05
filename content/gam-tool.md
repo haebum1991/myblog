@@ -1,7 +1,6 @@
 
 ---
 title: ""
-date: "2025-02-04"
 ---
 
 <h2>GAM tool using R shiny </h2>

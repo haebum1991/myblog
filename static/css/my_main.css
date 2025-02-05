@@ -1,3 +1,4 @@
+
 html,
 body {
   margin: 0;
@@ -41,8 +42,8 @@ img {
 .header {
   padding: 20px 0;
   position: relative;
-  background: #f5f5f5;
-  border-bottom: 1px solid #eaeaea;
+  background: linear-gradient(135deg, #4b0082, #6a5acd);
+  border-bottom: 1px solid #5a3e85;
 }
 
 .nav {
@@ -86,21 +87,41 @@ img {
 }
 
 .nav-links a {
+  font-weight: bold;
   text-decoration: none;
-  color: #111;
+  color: #ffffff;
 }
 
 .nav-links a:hover {
-  color: #000;
+  color: #ffffff;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 .content {
-  max-width: 70%;
-  margin: 40px auto 10px;
-  padding: 0 15px;
-  font-size: 16px;
-  line-height: 1.7;
-  color: #333;
+    flex: 3;
+    max-width: 80%;
+    margin: 10px 10px 10px 0;
+    padding: 0 15px;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #333;
+}
+
+.sidebar {
+    flex: 1;
+    max-width: 20%;
+    background-color: #f3eaff;
+    padding: 15px;
+    border-radius: 5px;
 }
 
 .article-title {
@@ -155,7 +176,7 @@ img {
 .highlight {
   border-radius: 3px;
   position: relative;
-  margin: 40px 0;
+  margin: 20px 0;
   font-size: 14px;
 }
 
@@ -174,7 +195,7 @@ img {
 
 .archive-title {
   font-size: 32px;
-  margin-top: 60px;
+  margin-top: 30px;
 }
 
 .archive-item {
@@ -205,6 +226,8 @@ img {
 }
 
 .footer {
+  background: #4b0082;
+  color: #ffffff;
   padding: 25px 0;
   text-align: center;
 }
@@ -224,7 +247,7 @@ img {
 }
 
 .footer-links a {
-  color: #888;
+  color: #ffffff;
   text-decoration: none;
   transition: color 150ms ease;
   margin: 0 15px;
@@ -232,11 +255,12 @@ img {
 
 .footer-links a:hover,
 .footer-links a:focus {
-  color: #222;
+  font-weight: bold;
+  color: #ffffff;
 }
 
 .footer-links li::before {
-  content: '/';
+  content: "/";
   position: relative;
   left: -2px;
 }
@@ -323,3 +347,33 @@ img {
     box-shadow: none;
   }
 }
+
+.widget {
+    background: #f3eaff;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.widget h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.widget ul {
+    list-style: none;
+    padding: 0;
+}
+
+.widget li {
+    margin-bottom: 5px;
+}
+
+.widget a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.widget a:hover {
+    text-decoration: underline;
+}
+
