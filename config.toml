@@ -1,0 +1,54 @@
+baseurl = "/"
+languageCode = "en-US"
+title = "A Hugo website"
+theme = "hugo-lithium"
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$"]
+
+[permalinks]
+    post = "/:year/:month/:day/:slug/"
+
+[[menu.main]]
+    name = "Home"
+    url = "/post/"
+    weight = 1
+    
+[[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 2
+    
+[[menu.main]]
+    name = "GAM tool"
+    url = "/gam-tool/"
+    weight = 3
+
+[[menu.main]]
+    name = "Resources"
+    url = "/resources/"
+    weight = 4
+    
+[params]
+    description = "A website built through Hugo and blogdown."
+
+    # options for highlight.js (version, additional languages, and theme)
+    highlightjsVersion = "9.12.0"
+    highlightjsCDN = "//cdnjs.cloudflare.com/ajax/libs"
+    highlightjsLang = ["r", "yaml"]
+    highlightjsTheme = "github"
+
+    MathJaxCDN = "//cdnjs.cloudflare.com/ajax/libs"
+    MathJaxVersion = "2.7.5"
+
+    # path to the my_logo, under "static"
+    [params.logo]
+    url = "my_logo.png"
+    width = 50
+    height = 50
+    alt = "Logo"
+
+[markup]
+  defaultMarkdownHandler = "goldmark"
+  [markup.goldmark.renderer]
+    unsafe = true  # Enable user to embed HTML snippets in Markdown content.
+  [markup.highlight]
+    codeFences = false
