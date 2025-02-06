@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Main on Leestory</title>
-    <link>/categories/main/</link>
+    <link>//localhost:4321/categories/main/</link>
     <description>Recent content in Main on Leestory</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Wed, 05 Feb 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/categories/main/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:4321/categories/main/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Welcom to my blog</title>
-      <link>/2025/02/05/welcom-to-my-blog/</link>
+      <link>//localhost:4321/2025/02/05/welcom-to-my-blog/</link>
       <pubDate>Wed, 05 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>/2025/02/05/welcom-to-my-blog/</guid>
+      <guid>//localhost:4321/2025/02/05/welcom-to-my-blog/</guid>
       <description>&lt;p&gt;Hello, and welcome to my blog!&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;m a scientist who focus on the multifaceted study of air quality and atmospheric phenomena, including the analysis of wildfire smoke on ozone, air pollutant monitoring, and the utilization of satellite and remote sensing data to assess atmospheric parameters.&lt;/p&gt;&#xA;&lt;p&gt;The purpose of this blog is to explain R technologies and how to integrate them into your research. I hope everything is useful, thank you.&lt;/p&gt;</description>
     </item>
   </channel>

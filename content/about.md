@@ -3,24 +3,12 @@
 title: "PhD. Haebum Lee"
 ---
 
-<h3 style="font-weight: bold;">Postdoctoral Scholar</h3>
+<h2 style="font-weight: bold;">Postdoctoral Scholar</h2>
 
-Jaffe Group, School of STEM, University of Washington (UW), Bothell, WA, USA<br>
-<span style="font-size: 16px;">
-  Email: <a href="mailto:haebum1991@gmail.com">haebum1991@gmail.com</a> /
-  <a href="mailto:hblee@uw.edu">hblee@uw.edu</a>
-</span>
-</p>
-Hello, and Welcome to my Blog!
-I am a scientist who focus on the multifaceted study of air quality and atmospheric phenomena, 
-including the analysis of wildfire smoke on ozone, air pollutant monitoring, and 
-the utilization of satellite and remote sensing data to assess atmospheric parameters. 
-I am also deeply engaged in studying the physicochemical properties of atmospheric aerosols, 
-the dynamics of new particle formation (NPF), and 
-the development of predictive models using machine learning.
-
-**Publications:** <a href="https://scholar.google.com/citations?hl=ko&user=98LKhgUAAAAJ" target="_blank">Google Scholar</a>
-
+Jaffe Group, <br>
+School of STEM, <br>
+University of Washington (UW), <br> 
+Bothell, WA, United States<br>
 
 <span class="social-links">
   <a href="https://www.linkedin.com/in/haebum-lee-683731305/" target="_blank">
@@ -34,8 +22,21 @@ the development of predictive models using machine learning.
   <a href="https://orcid.org/0009-0001-2045-8532" target="_blank">
     <img src="/images/ORCID_logo.png" width="30" height="30" alt="GitHub">
   </a>
+  &nbsp;&nbsp;
+  <a href="https://scholar.google.com/citations?user=98LKhgUAAAAJ&hl" target="_blank">
+    <img src="/images/ggscholar_logo.png" width="30" height="30" alt="GitHub">
+  </a>
 </span>
 
+<hr>
+</p>
+Hello, and Welcome to my Blog!
+I am a scientist who focus on the multifaceted study of air quality and atmospheric phenomena, 
+including the analysis of wildfire smoke on ozone, air pollutant monitoring, and 
+the utilization of satellite and remote sensing data to assess atmospheric parameters. 
+I am also deeply engaged in studying the physicochemical properties of atmospheric aerosols, 
+the dynamics of new particle formation (NPF), and 
+the development of predictive models using machine learning.
 
 ---
 <h3 style="font-weight: bold;">Research Interests</h3>

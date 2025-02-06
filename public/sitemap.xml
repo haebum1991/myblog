@@ -2,33 +2,33 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/categories/</loc>
+    <loc>//localhost:4321/categories/</loc>
     <lastmod>2025-02-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/</loc>
+    <loc>//localhost:4321/</loc>
     <lastmod>2025-02-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/categories/main/</loc>
+    <loc>//localhost:4321/categories/main/</loc>
     <lastmod>2025-02-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/post/</loc>
+    <loc>//localhost:4321/post/</loc>
     <lastmod>2025-02-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/2025/02/05/r-shiny-how-to-build-the-gam-tool-app-01/</loc>
+    <loc>//localhost:4321/2025/02/05/r-shiny-how-to-build-the-gam-tool-app-01/</loc>
     <lastmod>2025-02-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/categories/r-shiny/</loc>
+    <loc>//localhost:4321/categories/r-shiny/</loc>
     <lastmod>2025-02-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/2025/02/05/welcom-to-my-blog/</loc>
+    <loc>//localhost:4321/2025/02/05/welcom-to-my-blog/</loc>
     <lastmod>2025-02-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/gam-tool/</loc>
+    <loc>//localhost:4321/gam-tool/</loc>
   </url><url>
-    <loc>/about/</loc>
+    <loc>//localhost:4321/about/</loc>
   </url><url>
-    <loc>/resources/</loc>
+    <loc>//localhost:4321/resources/</loc>
   </url><url>
-    <loc>/tags/</loc>
+    <loc>//localhost:4321/tags/</loc>
   </url>
 </urlset>
