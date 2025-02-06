@@ -2,6 +2,11 @@
 ---
 title: "GAM tool using R shiny "
 ---
+<div style="text-align: left;">
+  <a href="https://smoke.shinyapps.io/rsGAM/" target="_blank" style="font-size: 16px;">
+    https://smoke.shinyapps.io/rsGAM/
+  </a>
+</div>
 
 <h3 style="font-weight: bold;">Purpose of tool</h3>
 
@@ -13,9 +18,7 @@ in understanding the factors that control ozone production.</p>
 <img src="/images/rsGAM_page_sample.png" alt="R shiny">
 
 <div style="text-align: center;">
-  <a href="https://smoke.shinyapps.io/rsGAM/" target="_blank" style="font-size: 16px;">
-    https://smoke.shinyapps.io/rsGAM/
-  </a>
+  Example page in the GAM tool app
 </div>
 
 <p><b>The GAM</b> is a statistical or machine learning framework that provides interpretability 
