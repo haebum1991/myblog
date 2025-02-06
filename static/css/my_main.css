@@ -322,14 +322,14 @@ img {
     .container {
         flex-direction: column;
         max-width: 100%;
-        padding: 010px;
+        padding: 10px;
     }
 
     .content {
         max-width: 100%;
         font-size: 16px;
-        margin: 0;
-        padding: 10px;
+        margin: 0 auto;
+        padding: 10px 10px;
     }
 
     .sidebar {
@@ -367,5 +367,4 @@ img {
         font-size: 14px;
     }
 }
-
 
