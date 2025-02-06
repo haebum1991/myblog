@@ -280,71 +280,6 @@ img {
   margin-left: 2px;
 }
 
-@media (min-width: 600px) {
-  .header {
-    padding: 25px 0;
-  }
-
-  .nav-logo {
-    margin-top: -13px;
-  }
-
-  .nav-logo img {
-    max-height: 50px;
-  }
-
-  .nav-links {
-    font-size: 18px;
-  }
-
-  .nav-links li {
-    margin: 0 0 0 30px;
-  }
-
-  .content {
-    font-size: 19px;
-    line-height: 1.8;
-  }
-
-  .highlight {
-    font-size: 16px;
-    margin: 40px -20px;
-  }
-
-  .archive {
-    text-align: left;
-  }
-
-  .archive-title {
-    font-size: 38px;
-  }
-
-  .archive-item-date {
-    font-size: 19px;
-    text-align: right;
-    float: right;
-  }
-
-  .archive-item-link {
-    text-overflow: ellipsis;
-    max-width: calc(100% - 120px);
-    white-space: nowrap;
-    overflow: hidden;
-  }
-
-  .article-title {
-    font-size: 32px;
-  }
-
-  .article-duration {
-    font-size: 12px;
-  }
-
-  .footer-links {
-    font-size: inherit;
-  }
-}
-
 .widget {
     background: #f3eaff;
     padding: 5px;
@@ -387,45 +322,40 @@ img {
     .container {
         flex-direction: column;
         max-width: 100%;
-        padding: 15px;
+        padding: 010px;
     }
 
     .content {
         max-width: 100%;
-        margin: 0;
-        padding: 0;
         font-size: 16px;
+        margin: 0;
+        padding: 10px;
     }
 
     .sidebar {
         max-width: 100%;
-        margin: 20px 0 0 0;
-        padding: 10px;
+        margin: 0 0 0 0;
+        padding: 0;
     }
 
     .nav {
-        max-width: 100%;
         text-align: center;
-        padding: 10px;
+        max-width: 100%;
     }
 
     .nav-links {
-        font-size: 16px;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-end;
+        font-size: 16px;
     }
 
     .nav-links li {
-        margin: 5px 0;
+        margin: 1px 0;
     }
 
     .nav-logo img {
         max-height: 35px;
-    }
-
-    .widget, .sidebar {
-        width: 100%;
     }
 
     .article-title {
@@ -435,12 +365,6 @@ img {
     .footer {
         padding: 15px 0;
         font-size: 14px;
-    }
-
-    .archive-item-link {
-        font-size: 18px;
-        max-width: 100%;
-        text-align: center;
     }
 }
 
