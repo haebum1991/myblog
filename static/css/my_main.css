@@ -47,7 +47,7 @@ img {
 }
 
 .nav {
-  max-width: 800px;
+  max-width: 70%;
   margin: 0 auto;
   padding: 0 15px;
   text-align: right;
@@ -67,7 +67,7 @@ img {
   display: block;
   max-height: 40px;
   width: auto;
-  border-radius: 50%;
+  border-radius: 5%;
 }
 
 .nav-links {

@@ -36,7 +36,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$"]
 
     # path to the my_logo, under "static"
     [params.logo]
-    url = "my_logo.png"
+    url = "my_logo_2.png"
     width = 50
     height = 50
     alt = "Logo"
