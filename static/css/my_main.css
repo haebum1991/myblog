@@ -340,11 +340,6 @@ img {
         padding: 0;
     }
 
-    .content p, .content ul, .content li, .content a {
-        margin-left: 0;
-        margin-right: 10px;
-    }
-    
     .sidebar {
         max-width: 100%;
         margin: 0 0 0 0;
