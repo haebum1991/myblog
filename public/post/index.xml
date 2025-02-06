@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Leestory</title>
-    <link>//localhost:4321/post/</link>
+    <link>/post/</link>
     <description>Recent content in Posts on Leestory</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Wed, 05 Feb 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="//localhost:4321/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>R shiny: How to build the &#34;GAM tool&#34; app [01]</title>
-      <link>//localhost:4321/2025/02/05/r-shiny-how-to-build-the-gam-tool-app-01/</link>
+      <link>/2025/02/05/r-shiny-how-to-build-the-gam-tool-app-01/</link>
       <pubDate>Wed, 05 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>//localhost:4321/2025/02/05/r-shiny-how-to-build-the-gam-tool-app-01/</guid>
+      <guid>/2025/02/05/r-shiny-how-to-build-the-gam-tool-app-01/</guid>
       <description>&lt;style&gt;&#xD;&#xA;pre code {&#xD;&#xA;    font-size: 14px;&#xD;&#xA;}&#xD;&#xA;&lt;/style&gt;&#xD;&#xA;&lt;p&gt;R shiny is a very useful and versatile tool to build your own app using R.&#xD;&#xA;This blog section will walk you through the step-by-step process of how the GAM tool app was built.&#xD;&#xA;Please note that your R environment and package versions may differ from mine.&#xD;&#xA;Today’s topic will cover how the basic UI was set up.&lt;/p&gt;&#xD;&#xA;&lt;p&gt;To begin, let’s set up a simple &lt;code&gt;shiny&lt;/code&gt; application with a basic UI and server structure.&#xD;&#xA;Before creating the app, ensure you have the necessary libraries installed. If not, you can install them using:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Welcom to my blog</title>
-      <link>//localhost:4321/2025/02/05/welcom-to-my-blog/</link>
+      <link>/2025/02/05/welcom-to-my-blog/</link>
       <pubDate>Wed, 05 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>//localhost:4321/2025/02/05/welcom-to-my-blog/</guid>
+      <guid>/2025/02/05/welcom-to-my-blog/</guid>
       <description>&lt;p&gt;Hello, and welcome to my blog!&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;m a scientist who focus on the multifaceted study of air quality and atmospheric phenomena, including the analysis of wildfire smoke on ozone, air pollutant monitoring, and the utilization of satellite and remote sensing data to assess atmospheric parameters.&lt;/p&gt;&#xA;&lt;p&gt;The purpose of this blog is to explain R technologies and how to integrate them into your research. I hope everything is useful, thank you.&lt;/p&gt;</description>
     </item>
   </channel>

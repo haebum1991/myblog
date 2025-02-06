@@ -31,7 +31,7 @@ the development of predictive models using machine learning.
     <img src="/images/github_logo.png" width="30" height="30" alt="GitHub">
   </a>
   &nbsp;&nbsp;
-  <a href="https://orcid.org/my-orcid?orcid=0009-0001-2045-8532/" target="_blank">
+  <a href="https://orcid.org/0009-0001-2045-8532" target="_blank">
     <img src="/images/ORCID_logo.png" width="30" height="30" alt="GitHub">
   </a>
 </span>
