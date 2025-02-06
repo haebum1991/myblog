@@ -15,5 +15,12 @@
       <guid>//localhost:4321/categories/main/</guid>
       <description></description>
     </item>
+    <item>
+      <title>R-Shiny</title>
+      <link>//localhost:4321/categories/r-shiny/</link>
+      <pubDate>Wed, 05 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:4321/categories/r-shiny/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>
