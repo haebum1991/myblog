@@ -22,13 +22,17 @@ the development of predictive models using machine learning.
 **Publications:** <a href="https://scholar.google.com/citations?hl=ko&user=98LKhgUAAAAJ" target="_blank">Google Scholar</a>
 
 
-<span>
+<span class="social-links">
   <a href="https://www.linkedin.com/in/haebum-lee-683731305/" target="_blank">
     <img src="/images/linkedin_logo.png" width="30" height="30" alt="LinkedIn">
   </a>
   &nbsp;&nbsp;
   <a href="https://github.com/haebum1991/" target="_blank">
     <img src="/images/github_logo.png" width="30" height="30" alt="GitHub">
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://orcid.org/my-orcid?orcid=0009-0001-2045-8532/" target="_blank">
+    <img src="/images/ORCID_logo.png" width="30" height="30" alt="GitHub">
   </a>
 </span>
 

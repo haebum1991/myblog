@@ -309,6 +309,16 @@ img {
     text-decoration: underline;
 }
 
+span.social-links {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+span.social-links a {
+    display: inline-block;
+}
+
 @media print {
   .header, .footer {
     display: none;
@@ -373,6 +383,10 @@ img {
     .footer {
         padding: 15px 0;
         font-size: 14px;
+    }
+    
+    .widget, .sidebar {
+        width: 99%;
     }
 }
 
