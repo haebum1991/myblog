@@ -1,9 +1,7 @@
 
 ---
-title: ""
+title: "GAM tool using R shiny "
 ---
-
-<h2>GAM tool using R shiny </h2>
 
 <h3 style="font-weight: bold;">Purpose of tool</h3>
 

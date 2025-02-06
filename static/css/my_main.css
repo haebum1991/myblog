@@ -47,7 +47,7 @@ img {
 }
 
 .nav {
-  max-width: 70%;
+  max-width: 69%;
   margin: 0 auto;
   padding: 0 15px;
   text-align: right;
@@ -88,6 +88,7 @@ img {
 
 .nav-links a {
   font-weight: bold;
+  font-size: 20px;
   text-decoration: none;
   color: #ffffff;
 }
@@ -103,25 +104,31 @@ img {
     align-items: flex-start;
     max-width: 70%;
     margin: 0 auto;
-    padding: 20px;
+    padding: 30px;
 }
 
 .content {
     flex: 3;
     max-width: 80%;
-    margin: 10px 10px 10px 0;
-    padding: 0 15px;
+    margin: 0 10px 10px 0;
+    padding: 0;
     font-size: 16px;
-    line-height: 1.7;
+    line-height: 1.5;
     color: #333;
 }
 
 .sidebar {
     flex: 1;
     max-width: 20%;
+    margin: 10px 0 0 10px;
     background-color: #f3eaff;
-    padding: 15px;
+    padding: 5px;
     border-radius: 5px;
+}
+
+.sidebar h2, .sidebar h3, .sidebar p, .sidebar ul, .sidebar li {
+    margin: 3px 0;
+    padding: 2px;
 }
 
 .article-title {
@@ -165,7 +172,7 @@ img {
 }
 
 .article-content hr {
-  width: 150px;
+  width: 100%;
   margin: 20px auto;
   height: 1px;
   overflow: hidden;
@@ -326,7 +333,7 @@ img {
   }
 
   .article-title {
-    font-size: 42px;
+    font-size: 32px;
   }
 
   .article-duration {
@@ -349,7 +356,7 @@ img {
 
 .widget {
     background: #f3eaff;
-    padding: 15px;
+    padding: 5px;
     border-radius: 5px;
 }
 

@@ -1,10 +1,10 @@
 
 ---
-title: ""
+title: "PhD. Haebum Lee"
 ---
 
-<h2>PhD. Haebum Lee</h2>
-<p><strong>Postdoctoral Scholar</strong><br>
+<h3 style="font-weight: bold;">Postdoctoral Scholar</h3>
+
 Jaffe Group, School of STEM, University of Washington (UW), Bothell, WA, USA<br>
 <span style="font-size: 16px;">
   Email: <a href="mailto:haebum1991@gmail.com">haebum1991@gmail.com</a> /
@@ -34,7 +34,7 @@ the development of predictive models using machine learning.
 
 
 ---
-## Research Interests  
+<h3 style="font-weight: bold;">Research Interests</h3>
 
 - Wildfire smoke impacts on air quality
 - Air pollutant & air quality monitoring
@@ -47,7 +47,7 @@ the development of predictive models using machine learning.
 - Analysis of morphology and elemental composition of ultrafine particles in the ambient atmosphere
 
 ---
-## Education & Experiences
+<h3 style="font-weight: bold;">Education & Experiences</h3>
 
 - **Postdoc / 2023.04-present**  
   <span style="font-size: 16px;"> 
@@ -76,7 +76,7 @@ the development of predictive models using machine learning.
   </span>
   
 ---
-## Technical skills
+<h3 style="font-weight: bold;">Technical skills</h3>
 
 - **Aerosol measurement techniques & Instrumentation**  
   - Condensation particle counter (CPC)  
