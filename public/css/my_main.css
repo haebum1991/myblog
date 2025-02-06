@@ -318,7 +318,7 @@ img {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .container {
         flex-direction: column;
         max-width: 100%;
@@ -329,19 +329,19 @@ img {
         max-width: 100%;
         font-size: 16px;
         margin: 0 auto;
-        padding: 10px 10px;
+        padding: 0 0;
     }
     
     .content img {
-        max-width: calc(100% - 10px);
+        max-width: 100%;
         height: auto;
         display: block;
         margin: 0 auto;
-        padding: 2px 2px;
+        padding: 0;
     }
 
     .content p, .content ul, .content li, .content a {
-        margin-left: 0px;
+        margin-left: 0;
         margin-right: 10px;
     }
     
