@@ -331,7 +331,20 @@ img {
         margin: 0 auto;
         padding: 10px 10px;
     }
+    
+    .content img {
+        max-width: calc(100% - 10px);
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        padding: 2px 2px;
+    }
 
+    .content p, .content ul, .content li, .content a {
+        margin-left: 0px;
+        margin-right: 10px;
+    }
+    
     .sidebar {
         max-width: 100%;
         margin: 0 0 0 0;
