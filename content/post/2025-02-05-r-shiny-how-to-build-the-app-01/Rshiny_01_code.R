@@ -38,10 +38,7 @@ ui <- fluidPage(
                      icon = icon("history")),
             menuItem("Discussion of statistics", 
                      tabName = "discussion_of_statistics", 
-                     icon = icon("comments")),
-            menuItem("Admin: mailing", 
-                     tabName = "admin_mailing", 
-                     icon = icon("envelope"))
+                     icon = icon("comments"))
           )
         ),
         

@@ -109,7 +109,8 @@ and after setting the UI and server, you can check the app using <code>shinyApp(
 <pre class="r"><code>ui &lt;- fluidPage()
 server &lt;- function(input, output, session) {}
 shiny::shinyApp(ui = ui, server = server)</code></pre>
-<p>Let’s make a simple example using <code>shinydashboard</code> package.
+<p><br>
+Let’s make a simple example using <code>shinydashboard</code> package.
 When you run below code, you can see the blank page with blue colored dashboard.</p>
 <pre class="r"><code>ui &lt;- fluidPage(
   dashboardPage(
@@ -126,7 +127,8 @@ When you run below code, you can see the blank page with blue colored dashboard.
 
 server &lt;- function(input, output, session) {}
 shiny::shinyApp(ui = ui, server = server)</code></pre>
-<p>Okay, now let’s add a title to the app and some tabs to the sidebar in the UI.</p>
+<p><br>
+Okay, now let’s add a title to the app and some tabs to the sidebar in the UI.</p>
 <pre class="r"><code>ui &lt;- fluidPage(
   dashboardPage(
     ## Dashboard color
@@ -150,10 +152,7 @@ shiny::shinyApp(ui = ui, server = server)</code></pre>
                  icon = icon(&quot;history&quot;)),
         menuItem(&quot;Sidebar 4&quot;, 
                  tabName = &quot;sidebar_4&quot;, 
-                 icon = icon(&quot;comments&quot;)),
-        menuItem(&quot;Sidebar 5&quot;, 
-                 tabName = &quot;sidebar_5&quot;, 
-                 icon = icon(&quot;envelope&quot;))
+                 icon = icon(&quot;comments&quot;))
       )
     ),
     ## Dashboard body
@@ -164,8 +163,8 @@ shiny::shinyApp(ui = ui, server = server)</code></pre>
 
 server &lt;- function(input, output, session) {}
 shiny::shinyApp(ui = ui, server = server)</code></pre>
-<p><a href="Rshiny_01_Fig_1.png"><img src="Rshiny_01_Fig_1.png" /></a></p>
-<p>In this context, the final basic structure of our app is as follows.
+<p><br>
+In this context, the final basic structure of our app is as follows.
 The “id” and “tabName” shown below serve as a type of “address”.
 In dynamic web applications, elements such as id, name, and value are crucial.
 Properly setting these ensures smooth communication between the UI and the server.</p>
@@ -203,10 +202,7 @@ Properly setting these ensures smooth communication between the UI and the serve
                      icon = icon(&quot;history&quot;)),
             menuItem(&quot;Discussion of statistics&quot;, 
                      tabName = &quot;discussion_of_statistics&quot;, 
-                     icon = icon(&quot;comments&quot;)),
-            menuItem(&quot;Admin: mailing&quot;, 
-                     tabName = &quot;admin_mailing&quot;, 
-                     icon = icon(&quot;envelope&quot;))
+                     icon = icon(&quot;comments&quot;))
           )
         ),
         ## Dashboard body
@@ -218,7 +214,8 @@ Properly setting these ensures smooth communication between the UI and the serve
 
 server &lt;- function(input, output, session) {}
 shiny::shinyApp(ui = ui, server = server)</code></pre>
-<p><a href="Rshiny_01_Fig_2.png"><img src="Rshiny_01_Fig_2.png" /></a></p>
+<iframe src="https://rumibam.shinyapps.io/2025-02-05-r-shiny-how-to-build-the-app-01/" width="100%" height="600px" style="border:none;">
+</iframe>
 <p><code>div(id = "ui_main_page", ... )</code> serves as a wrapper for the entire UI with “id”,
 allowing for future dynamic UI manipulations.
 <code>shinyjs::useShinyjs()</code> enables JavaScript-free UI modifications,
