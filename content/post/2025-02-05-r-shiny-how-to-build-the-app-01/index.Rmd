@@ -1,8 +1,8 @@
 ---
-title: 'R shiny: How to build the "GAM tool" app [01]'
+title: 'R shiny: How to build the app [01]'
 author: Haebum Lee
 date: '2025-02-05'
-slug: r-shiny-how-to-build-the-gam-tool-app-01
+slug: r-shiny-how-to-build-the-app-01
 categories:
   - R-shiny
 tags: []
