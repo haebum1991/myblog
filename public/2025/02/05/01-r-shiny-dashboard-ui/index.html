@@ -7,8 +7,8 @@
 <meta name="generator" content="Hugo 0.143.1">
 
 
-<title>R shiny: How to build the app [01] - Leestory</title>
-<meta property="og:title" content="R shiny: How to build the app [01] - Leestory">
+<title>[01] R shiny: Dashboard UI - Leestory</title>
+<meta property="og:title" content="[01] R shiny: Dashboard UI - Leestory">
 
 
 
@@ -67,7 +67,7 @@
             <span class="article-duration">4 min read</span>
             
 
-            <h1 class="article-title">R shiny: How to build the app [01]</h1>
+            <h1 class="article-title">[01] R shiny: Dashboard UI</h1>
 
             
             <span class="article-date">2025-02-05</span>
@@ -89,13 +89,8 @@ Please note that your R environment and package versions may differ from mine.
 Today’s topic will cover how the basic UI was set up.</p>
 <p>To begin, let’s set up a simple <code>shiny</code> application with a basic UI and server structure.
 Before creating the app, ensure you have the necessary libraries installed. If not, you can install them using:</p>
-<pre class="r"><code># Please install these pacakge if you didn&#39;t.
-# install.packages(&quot;shiny&quot;)
-# install.packages(&quot;shinyjs&quot;)
-# install.packages(&quot;shinydashboard&quot;)
-# install.packages(&quot;htmltools&quot;)
-
-# Load pacakges
+<pre class="r"><code># Please install these packages before import them.
+# Load packages
 library(shiny)
 library(shinyjs)
 library(shinydashboard)
@@ -214,7 +209,7 @@ Properly setting these ensures smooth communication between the UI and the serve
 
 server &lt;- function(input, output, session) {}
 shiny::shinyApp(ui = ui, server = server)</code></pre>
-<iframe src="https://rumibam.shinyapps.io/2025-02-05-r-shiny-how-to-build-the-app-01/" width="100%" height="600px" style="border:none;">
+<iframe src="https://rumibam.shinyapps.io/2025-02-05-01-r-shiny-dashboard-ui/" width="100%" height="600px" style="border:none;">
 </iframe>
 <p><code>div(id = "ui_main_page", ... )</code> serves as a wrapper for the entire UI with “id”,
 allowing for future dynamic UI manipulations.
@@ -238,11 +233,7 @@ Next time you’ll learn how to utilize these.</p>
     <ul>
         
         <li>
-            <a href="/categories/main">main</a> (1)
-        </li>
-        
-        <li>
-            <a href="/categories/r-shiny">r-shiny</a> (1)
+            <a href="/categories/r-shiny">r-shiny</a> (2)
         </li>
         
     </ul>

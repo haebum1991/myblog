@@ -2,25 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>//localhost:4321/2025/02/07/01-r-shiny-create-login-page/</loc>
+    <lastmod>2025-02-07T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>//localhost:4321/categories/</loc>
-    <lastmod>2025-02-05T00:00:00+00:00</lastmod>
+    <lastmod>2025-02-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:4321/</loc>
-    <lastmod>2025-02-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:4321/categories/main/</loc>
-    <lastmod>2025-02-05T00:00:00+00:00</lastmod>
+    <lastmod>2025-02-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:4321/post/</loc>
-    <lastmod>2025-02-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:4321/2025/02/05/r-shiny-how-to-build-the-app-01/</loc>
-    <lastmod>2025-02-05T00:00:00+00:00</lastmod>
+    <lastmod>2025-02-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:4321/categories/r-shiny/</loc>
-    <lastmod>2025-02-05T00:00:00+00:00</lastmod>
+    <lastmod>2025-02-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:4321/2025/02/05/welcom-to-my-blog/</loc>
+    <loc>//localhost:4321/2025/02/05/01-r-shiny-dashboard-ui/</loc>
     <lastmod>2025-02-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:4321/gam-tool/</loc>

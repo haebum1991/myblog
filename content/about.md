@@ -38,6 +38,9 @@ I am also deeply engaged in studying the physicochemical properties of atmospher
 the dynamics of new particle formation (NPF), and 
 the development of predictive models using machine learning.
 
+This blog is to explain R technologies and how to integrate them into your research. 
+I hope everything is useful, thank you.
+
 ---
 <h3 style="font-weight: bold;">Research Interests</h3>
 

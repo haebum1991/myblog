@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=4321&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.143.1">
+
+
+<title>[02] R shiny: Create login page - Leestory</title>
+<meta property="og:title" content="[02] R shiny: Create login page - Leestory">
+
+
+
+
+  
+
+
+
+
+
+
+
+
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+
+
+
+<link rel="stylesheet" href="/css/my_fonts.css" media="all">
+<link rel="stylesheet" href="/css/my_main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        
+<nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/images/my_logo_2.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/about/">About</a></li>
+    
+    <li><a href="/gam-tool/">GAM tool</a></li>
+    
+    <li><a href="/resources/">Resources</a></li>
+    
+  </ul>
+</nav>
+
+
+      </header>
+
+
+<div class="container">
+
+    <main class="content">
+        <article class="article">
+            
+            <span class="article-duration">2 min read</span>
+            
+
+            <h1 class="article-title">[02] R shiny: Create login page</h1>
+
+            
+            <span class="article-date">2025-02-07</span>
+            
+
+            <div class="article-content">
+                
+                
+
+
+<style>
+pre code {
+    font-size: 14px;
+}
+</style>
+<p>Implementing a typical login page can be quite complex in R shiny.
+Implementing such a typical login page requires handling user information and passwords,
+which presents limitations when building it in R Shiny.
+This post demonstrates how to create a “login page” in an R Shiny app.
+More precisely, it might be more appropriate to call it a simulated login page.</p>
+<p>For example, you could create a feature that takes guests
+from the login page to the main UI page by simply entering their email address.
+Furthermore, you can even have your visitors receive a notification
+via email as soon as they enter their email address.</p>
+<pre class="r"><code># Please install these packages before import them.
+# Load packages
+library(shiny)
+library(shinyjs)
+library(shinydashboard)
+library(htmltools)</code></pre>
+<p>The following R Shiny code creates a simple login page UI.
+It allows users to input their email (required) and affiliation (optional) before clicking the “Go to app” button to proceed.</p>
+<pre class="r"><code>ui &lt;- fluidPage(
+  shinyjs::useShinyjs(),  # Enables the use of ShinyJS for dynamic UI control
+  
+  ## UI login page
+  div(
+    id = &quot;login_page&quot;,  # Wrapper div with an ID for the login page
+    
+    fluidRow(  # Creates a responsive row layout
+      column(4,  # Defines a column that takes 4/12 of the width
+             offset = 4,  # Centers the column by adding an offset of 4
+
+             wellPanel(  # Creates a styled panel for login inputs
+               class = &quot;login-panel&quot;,  # Custom CSS class for styling
+               
+               h2(&quot;Welcome to Login Page!&quot;),  # Heading text
+               
+               textInput(inputId = &quot;subscribe_email&quot;, 
+                         label = HTML(&#39;Email (&lt;span style=&quot;color: red;&quot;&gt;required&lt;/span&gt;)&#39;), 
+                         value = &quot;&quot;),  # Required email input field with HTML formatting
+               
+               textInput(inputId = &quot;subscribe_affil&quot;, 
+                         label = &quot;Affiliation (optional)&quot;, value = &quot;&quot;)  # Optional affiliation input field
+             ),
+             
+             column(12,  # Full-width column inside the main column for button alignment
+                    style = &quot;text-align: right;&quot;,  # Aligns the button to the right
+                    actionButton(inputId = &quot;login_btn&quot;, 
+                                 label = &quot;Go to app&quot;)  # Button to proceed to the main app
+             )
+      )
+    )
+  )
+)
+
+server &lt;- function(input, output, session) {}
+shiny::shinyApp(ui = ui, server = server)</code></pre>
+<p>After writing the code, you can run it using <code>shiny::shinyApp(ui = ui, server = server)</code>,
+and the login page UI will be displayed as follows.
+(!Note that we haven’t started the server part yet! So, there is nothing written in the server section.
+You can modify various elements to match your design. Try making some changes and experiment with different settings!)</p>
+<iframe src="https://rumibam.shinyapps.io/2025-02-07-02-r-shiny-create-login-page/" width="100%" height="600px" style="border:none;">
+</iframe>
+
+            </div>
+        </article>
+
+        
+
+    </main>
+
+    <aside class="sidebar">
+        
+<section class="widget">
+    <h3>Archive</h3>
+    <br>
+    <ul>
+        
+        <li>
+            <a href="/categories/r-shiny">r-shiny</a> (2)
+        </li>
+        
+    </ul>
+</section>
+
+
+
+    </aside>
+
+</div>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="/images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+    
+
+    
+  </body>
+</html>
+
+
