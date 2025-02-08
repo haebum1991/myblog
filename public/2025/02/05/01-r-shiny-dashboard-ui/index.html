@@ -209,8 +209,13 @@ Properly setting these ensures smooth communication between the UI and the serve
 
 server &lt;- function(input, output, session) {}
 shiny::shinyApp(ui = ui, server = server)</code></pre>
-<iframe src="https://rumibam.shinyapps.io/2025-02-05-01-r-shiny-dashboard-ui/" width="100%" height="600px" style="border:none;">
-</iframe>
+<div style="text-align: center;">
+<p><img src="01_Shiny_main_page.png"></p>
+</div>
+<!-- # ```{r, results="asis", echo=FALSE} -->
+<!-- # cat('<iframe src="https://leestory.shinyapps.io/2025-02-05-01-r-shiny-dashboard-ui/"  -->
+<!-- #       width="100%" height="600px" style="border:none;"></iframe>') -->
+<!-- # ``` -->
 <p><code>div(id = "ui_main_page", ... )</code> serves as a wrapper for the entire UI with “id”,
 allowing for future dynamic UI manipulations.
 <code>shinyjs::useShinyjs()</code> enables JavaScript-free UI modifications,
@@ -233,7 +238,7 @@ Next time you’ll learn how to utilize these.</p>
     <ul>
         
         <li>
-            <a href="/categories/r-shiny">r-shiny</a> (2)
+            <a href="/categories/r-shiny">r-shiny</a> (3)
         </li>
         
     </ul>

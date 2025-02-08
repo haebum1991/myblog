@@ -22,5 +22,12 @@
       <guid>//localhost:4321/2025/02/05/01-r-shiny-dashboard-ui/</guid>
       <description>&lt;style&gt;&#xD;&#xA;pre code {&#xD;&#xA;    font-size: 14px;&#xD;&#xA;}&#xD;&#xA;&lt;/style&gt;&#xD;&#xA;&lt;p&gt;R shiny is a very useful and versatile tool to build your own app using R.&#xD;&#xA;This blog section will walk you through the step-by-step process of how the GAM tool app was built.&#xD;&#xA;Please note that your R environment and package versions may differ from mine.&#xD;&#xA;Today’s topic will cover how the basic UI was set up.&lt;/p&gt;&#xD;&#xA;&lt;p&gt;To begin, let’s set up a simple &lt;code&gt;shiny&lt;/code&gt; application with a basic UI and server structure.&#xD;&#xA;Before creating the app, ensure you have the necessary libraries installed. If not, you can install them using:&lt;/p&gt;</description>
     </item>
+    <item>
+      <title>[00] R shiny: Getting started</title>
+      <link>//localhost:4321/2025/02/04/00-r-shiny-getting-started/</link>
+      <pubDate>Tue, 04 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:4321/2025/02/04/00-r-shiny-getting-started/</guid>
+      <description>&lt;div id=&#34;r-shiny&#34; class=&#34;section level2&#34;&gt;&#xD;&#xA;&lt;h2&gt;R Shiny&lt;/h2&gt;&#xD;&#xA;&lt;p&gt;&lt;strong&gt;R Shiny&lt;/strong&gt; is an open-source R package that allows users to build interactive web applications directly in R without requiring extensive knowledge of web development (HTML, CSS, or JavaScript). It is widely used for &lt;strong&gt;data visualization, dashboard creation, and interactive analytics&lt;/strong&gt;. Shiny applications run in a web browser and can be hosted &lt;strong&gt;locally&lt;/strong&gt;, on &lt;strong&gt;Shiny Server&lt;/strong&gt;, or deployed to &lt;strong&gt;ShinyApps.io&lt;/strong&gt; or other cloud platforms.&#xD;&#xA;R Shiny is a game-changer for those who want to create &lt;strong&gt;interactive applications&lt;/strong&gt; and &lt;strong&gt;data-driven dashboards&lt;/strong&gt; without needing deep web development expertise. Whether you’re an analyst, researcher, or developer, Shiny provides a powerful and flexible way to bring your data to life.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>
