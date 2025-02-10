@@ -117,48 +117,20 @@ shiny::shinyApp(ui = ui, server = server)</code></pre>
 To achieve this, we need to use the <code>shinyjs::hidden()</code> function.
 That is, the section with <code>div(id = "ui_main_page", ...)</code> should be wrapped with <code>shinyjs::hidden()</code> as follows:</p>
 <pre class="r"><code>## UI main page
-shinyjs::hidden(
+ui &lt;- fluidPage(
+  shinyjs::useShinyjs(),
+  
+  ## UI login page
   div(
-    id = &quot;ui_main_page&quot;,
-    
-    dashboardPage(
-      skin = &quot;blue&quot;,
-      
-      ## Dashboard header
-      dashboardHeader(title = tagList(icon(&quot;chart-line&quot;), &quot;GAM tool&quot;),
-                      tags$li(class = &quot;dropdown&quot;,
-                              style = &quot;margin-right: 10px; margin-top: 8px;&quot;,
-                              actionButton(inputId = &quot;login_admin_btn&quot;,
-                                           label = &quot;Admin&quot;,
-                                           icon = icon(&quot;user-shield&quot;)),
-                              actionButton(inputId = &quot;logout_btn&quot;,
-                                           label = &quot;Logout&quot;,
-                                           icon = icon(&quot;sign-out-alt&quot;))
-                      )),
-      
-      ## Dashboard sidebar
-      dashboardSidebar(
-        sidebarMenu(
-          id = &quot;tabs&quot;, 
-          menuItem(&quot;General information&quot;, 
-                   tabName = &quot;ginfo&quot;, 
-                   icon = icon(&quot;info-circle&quot;)),
-          menuItem(&quot;GAM manual&quot;, 
-                   tabName = &quot;gam_manual&quot;,
-                   icon = icon(&quot;project-diagram&quot;)),
-          menuItem(&quot;GAM previous&quot;, 
-                   tabName = &quot;gam_previous&quot;, 
-                   icon = icon(&quot;history&quot;)),
-          menuItem(&quot;Discussion of statistics&quot;, 
-                   tabName = &quot;discussion_of_statistics&quot;, 
-                   icon = icon(&quot;comments&quot;))
-        )
-      ),
-      
-      ## Dashboard body
-      dashboardBody(
-        
-      )
+    id = &quot;login_page&quot;,
+    ...
+  ),
+  
+  ## UI main page
+  shinyjs::hidden(
+    div(
+      id = &quot;ui_main_page&quot;,
+      ...
     )
   )
 )</code></pre>
@@ -201,6 +173,113 @@ This logic allows users to switch between the login page and the main page using
 <p>The most important thing here is to set the <span style="color:red; font-weight:bold;"><code>id</code></span> properly.
 Whether it’s the <span style="color:red; font-weight:bold;"><code>id</code></span> of an <code><code>actionButton(id = ...)</code></code> or the <span style="color:red; font-weight:bold;"><code>id</code></span> included in <code><code>div(id = ...)</code></code>,
 smooth communication between the <code>server</code> and <code>ui</code> relies on these <span style="color:red; font-weight:bold;">id</span> values.</p>
+<p>So, the final code is…</p>
+<pre class="r"><code>## shiny packages
+suppressPackageStartupMessages(library(&quot;shiny&quot;))
+suppressPackageStartupMessages(library(&quot;shinyjs&quot;))
+suppressPackageStartupMessages(library(&quot;shinydashboard&quot;))
+suppressPackageStartupMessages(library(&quot;htmltools&quot;))
+
+# Define UI ----
+ui &lt;- fluidPage(
+  shinyjs::useShinyjs(),
+  
+  ## UI login page
+  div(
+    id = &quot;login_page&quot;,
+    
+    fluidRow(
+      column(4, 
+             offset = 4,
+             
+             wellPanel(
+               class = &quot;login-panel&quot;,
+               
+               h2(&quot;Welcome to Login Page!&quot;),
+               
+               textInput(inputId = &quot;login_email&quot;, 
+                         label = HTML(&#39;Email (&lt;span style=&quot;color: red;&quot;&gt;required&lt;/span&gt;)&#39;), 
+                         value = &quot;&quot;),
+               
+               textInput(inputId = &quot;login_affil&quot;, 
+                         label = &quot;Affiliation (optional)&quot;, value = &quot;&quot;)
+             ),
+             column(12,
+                    style = &quot;text-align: right;&quot;,
+                    actionButton(inputId = &quot;login_btn&quot;, 
+                                 label = &quot;Go to app&quot;)
+             )
+      )
+    )
+  ),
+  
+  ## UI main page
+  shinyjs::hidden(
+    div(
+      id = &quot;ui_main_page&quot;,
+      
+      dashboardPage(
+        skin = &quot;blue&quot;,
+        
+        ## Dashboard header
+        dashboardHeader(title = tagList(icon(&quot;chart-line&quot;), &quot;GAM tool&quot;),
+                        tags$li(class = &quot;dropdown&quot;,
+                                style = &quot;margin-right: 10px; margin-top: 8px;&quot;,
+                                actionButton(inputId = &quot;login_admin_btn&quot;,
+                                             label = &quot;Admin&quot;,
+                                             icon = icon(&quot;user-shield&quot;)),
+                                actionButton(inputId = &quot;logout_btn&quot;,
+                                             label = &quot;Logout&quot;,
+                                             icon = icon(&quot;sign-out-alt&quot;))
+                        )),
+        
+        ## Dashboard sidebar
+        dashboardSidebar(
+          sidebarMenu(
+            id = &quot;tabs&quot;, 
+            menuItem(&quot;General information&quot;, 
+                     tabName = &quot;ginfo&quot;, 
+                     icon = icon(&quot;info-circle&quot;)),
+            menuItem(&quot;GAM manual&quot;, 
+                     tabName = &quot;gam_manual&quot;,
+                     icon = icon(&quot;project-diagram&quot;)),
+            menuItem(&quot;GAM previous&quot;, 
+                     tabName = &quot;gam_previous&quot;, 
+                     icon = icon(&quot;history&quot;)),
+            menuItem(&quot;Discussion of statistics&quot;, 
+                     tabName = &quot;discussion_of_statistics&quot;, 
+                     icon = icon(&quot;comments&quot;))
+          )
+        ),
+        
+        ## Dashboard body
+        dashboardBody(
+          
+        )
+      )
+    )
+  )
+)
+
+# Server part ----
+server &lt;- function(input, output, session) {
+
+  ### Guest login button
+  observeEvent(input$login_btn, {
+      shinyjs::hide(id = &quot;login_page&quot;)
+      shinyjs::show(id = &quot;ui_main_page&quot;)
+  })
+  
+  ### Guest logout button
+  observeEvent(input$logout_btn, {
+    shinyjs::show(id = &quot;login_page&quot;)
+    shinyjs::hide(id = &quot;ui_main_page&quot;)
+  })
+}
+
+# Run the app ----
+shinyApp(ui = ui,
+         server = server)</code></pre>
 <p>By testing the final output below, you can verify that clicking the [Go to App] button on the <code>login_page</code> and the [Logout] button on the <code>ui_main_page</code> successfully triggers the screen transition.</p>
 <iframe src="https://leestory.shinyapps.io/2025-02-10-03-r-shiny-hide-show-login-page/" width="100%" height="600px" style="border:none;">
 </iframe>

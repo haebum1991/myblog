@@ -21,11 +21,11 @@ ui <- fluidPage(
                
                h2("Welcome to Login Page!"),
                
-               textInput(inputId = "subscribe_email", 
+               textInput(inputId = "login_email", 
                          label = HTML('Email (<span style="color: red;">required</span>)'), 
                          value = ""),
                
-               textInput(inputId = "subscribe_affil", 
+               textInput(inputId = "login_affil", 
                          label = "Affiliation (optional)", value = "")
              ),
              column(12,
