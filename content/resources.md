@@ -146,7 +146,7 @@ title: "Resources"
     A blog on environmental science, air quality, and climate change (Dr. Jaffe, UW)
   </li>
   <li>
-    <a href="https://geodata.bts.gov/datasets/usdot::core-based-statistical-areas/explore?location=34.940269%2C-93.312937%2C4.54" target="_blank">WFEIS:</a>
+    <a href="https://wfeis.mtri.org/home" target="_blank">WFEIS:</a>
     Wildland Fire Emissions Inventory System (WFEIS) - assessments of historical wildland fire emissions across US, Canada, and global boreal regions
   </li>
 </ul>
