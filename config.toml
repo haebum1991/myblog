@@ -7,7 +7,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$"]
 disqusShortname = "haebum1991"
 
 [permalinks]
-    post = "/:year/:month/:day/:slug/"
+    post = "/:year/:slug/"
 
 [[menu.main]]
     name = "About"

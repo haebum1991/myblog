@@ -2,10 +2,11 @@
 {{ partial "header.html" . }}
 
 <div class="container">
-
     <main class="content">
         <article class="article">
-            <h1 class="article-title">{{ .Title }}</h1>
+        
+            <h1 class="article-title">Archive</h1>
+            <hr>
 
             {{ if .Content }}
             <div class="article-content">
@@ -19,14 +20,30 @@
                 {{ $pages = .Site.RegularPages }}
                 {{ end }}
                 {{ range (where $pages "Section" "!=" "").GroupByDate "2006" }}
-                <h2 class="archive-title">{{ .Key }}</h2>
                 {{ range .Pages }}
-                <article class="archive-item">
-                    <a href="{{ .RelPermalink }}" class="archive-item-link">{{ .Title }}</a>
-                    <span class="archive-item-date">
-                        {{ .Date.Format "2006-01-02" }}
-                    </span>
+                
+                <article class="archive-item post-item">
+                    {{ if .Resources.Match .Params.featuredImage }}
+                      {{ $image := .Resources.GetMatch .Params.featuredImage }}
+                      <div class="post-thumbnail">
+                          <img src="{{ $image.RelPermalink }}" alt="{{ .Title }}">
+                      </div>
+                    {{ end }}
+
+                    <div class="post-content">
+                        <a href="{{ .RelPermalink }}" class="archive-item-link">{{ .Title }}</a>
+
+                        <div class="post-meta">
+                            <span class="post-date">{{ .Date.Format "Jan 2, 2006" }}</span>
+                            • <span class="post-read-time">{{ .ReadingTime }} min read</span>
+                            • <span class="post-comments">0 Comments</span>
+                            {{ with .Params.categories }}
+                            • <span class="post-category">{{ delimit . ", " }}</span>
+                            {{ end }}
+                        </div>
+                    </div>
                 </article>
+                
                 {{ end }}
                 {{ end }}
             </div>
@@ -39,6 +56,7 @@
     </aside>
 
 </div>
+
 
 {{ partial "footer.html" . }}
 

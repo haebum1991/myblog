@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:4321/2025/02/07/01-r-shiny-create-login-page/</loc>
+    <loc>//localhost:4321/2025/02-r-shiny-create-login-page/</loc>
     <lastmod>2025-02-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:4321/categories/</loc>
@@ -17,10 +17,10 @@
     <loc>//localhost:4321/categories/r-shiny/</loc>
     <lastmod>2025-02-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:4321/2025/02/05/01-r-shiny-dashboard-ui/</loc>
+    <loc>//localhost:4321/2025/01-r-shiny-dashboard-ui/</loc>
     <lastmod>2025-02-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:4321/2025/02/04/00-r-shiny-getting-started/</loc>
+    <loc>//localhost:4321/2025/00-r-shiny-getting-started/</loc>
     <lastmod>2025-02-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:4321/gam-tool/</loc>

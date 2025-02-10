@@ -3,6 +3,7 @@ title: '[01] R shiny: Dashboard UI'
 author: Haebum Lee
 date: '2025-02-05'
 slug: 01-r-shiny-dashboard-ui
+featuredImage: "01_Shiny_main_page.png"
 categories:
   - R-shiny
 tags: []
