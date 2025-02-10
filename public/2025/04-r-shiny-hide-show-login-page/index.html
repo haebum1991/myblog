@@ -1,14 +1,94 @@
----
-title: '[03] R shiny: Hide/Show login page'
-author: Haebum Lee
-date: '2025-02-10'
-slug: 03-r-shiny-hide-show-login-page
-featuredImage: "01_Shiny_hide_show_login_page.png"
-categories:
-  - R-shiny
-tags: []
----
 
+<!DOCTYPE html>
+<html lang="en-US">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=4321&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.143.1">
+
+
+<title>[04] R shiny: Hide/Show login page - Leestory</title>
+<meta property="og:title" content="[04] R shiny: Hide/Show login page - Leestory">
+
+
+
+
+  
+
+
+
+
+
+
+
+
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+
+
+
+<link rel="stylesheet" href="/css/my_fonts.css" media="all">
+<link rel="stylesheet" href="/css/my_main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        
+<nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/images/my_logo_2.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/about/">About</a></li>
+    
+    <li><a href="/gam-tool/">GAM tool</a></li>
+    
+    <li><a href="/resources/">Resources</a></li>
+    
+  </ul>
+</nav>
+
+
+      </header>
+
+
+<div class="container">
+    <main class="content">
+
+            
+                <nav class="post-navigation">
+                
+                <a class="prev-post" href="/2025/03-r-shiny-create-login-page/">
+                    &larr; [03] R shiny: Create login page
+                </a>
+                
+                
+                </nav>
+                <hr>
+            
+    
+        <article class="article">
+        
+            
+            <span class="article-duration">5 min read</span>
+            
+
+            <h1 class="article-title">[04] R shiny: Hide/Show login page</h1>
+
+            
+            <span class="article-date">2025-02-10</span>
+            
+
+            <div class="article-content">
+                
+                
 
 
 <style>
@@ -28,7 +108,7 @@ library(shiny)
 library(shinyjs)
 library(shinydashboard)
 library(htmltools)</code></pre>
-<p>Let’s combine the two constructed syntax described in previous sections: “[01] R shiny: Dashboard UI” and “[02] R shiny: Create login page”.</p>
+<p>Let’s combine the two constructed syntax described in previous sections: “[02] R shiny: Dashboard UI” and “[03] R shiny: Create login page”.</p>
 <pre class="r"><code>ui &lt;- fluidPage(
   shinyjs::useShinyjs(),
   
@@ -283,3 +363,111 @@ shinyApp(ui = ui,
 <p>By testing the final output below, you can verify that clicking the [Go to App] button on the <code>login_page</code> and the [Logout] button on the <code>ui_main_page</code> successfully triggers the screen transition.</p>
 <iframe src="https://leestory.shinyapps.io/2025-02-10-03-r-shiny-hide-show-login-page/" width="100%" height="600px" style="border:none;">
 </iframe>
+
+            </div>
+            
+        </article>
+
+        
+<section id="comments">
+  <div id="disqus_thread"></div>
+  <script>
+  var disqus_config = function () {
+  
+  };
+  (function() {
+    var inIFrame = function() {
+      var iframe = true;
+      try { iframe = window.self !== window.top; } catch (e) {}
+      return iframe;
+    };
+    if (inIFrame()) return;
+    var d = document, s = d.createElement('script');
+    s.src = '//haebum1991.disqus.com/embed.js'; s.async = true;
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+
+
+    </main>
+
+    <aside class="sidebar">
+        
+<section class="widget">
+    <h3>Archive</h3>
+    <br>
+    <ul>
+        
+        <li>
+            <a href="/categories/r-shiny">r-shiny</a> (4)
+        </li>
+        
+    </ul>
+</section>
+
+
+
+    </aside>
+
+</div>
+
+
+<footer class="footer-container">
+  <ul class="footer-links">
+    
+    <li>
+      <a href="https://gohugo.io/" class="footer-links-kudos">
+        Made with 
+        <img src="/images/hugo-logo.png" alt="Hugo Logo" width="22" height="22">
+      </a>
+    </li>
+  </ul>
+
+  <p class="footer-copyright">  
+    Copyright © 2025 Leestory. All rights reserved.
+  </p>
+
+  <button id="back-to-top" onclick="scrollToTop()">▲ Back to Top</button>
+</footer>
+
+
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+
+<script src="/js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+<script>
+  function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
+  window.addEventListener("scroll", function() {
+      const button = document.getElementById("back-to-top");
+      if (window.scrollY > 300) {
+          button.style.display = "block";
+      } else {
+          button.style.display = "none";
+      }
+  });
+</script>
+
+
+

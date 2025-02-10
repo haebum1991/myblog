@@ -1,8 +1,8 @@
 ---
-title: '[03] R shiny: Hide/Show login page'
+title: '[04] R shiny: Hide/Show login page'
 author: Haebum Lee
 date: '2025-02-10'
-slug: 03-r-shiny-hide-show-login-page
+slug: 04-r-shiny-hide-show-login-page
 featuredImage: "01_Shiny_hide_show_login_page.png"
 categories:
   - R-shiny
@@ -33,7 +33,7 @@ library(htmltools)
 ```
 
 
-Let's combine the two constructed syntax described in previous sections: "[01] R shiny: Dashboard UI" and "[02] R shiny: Create login page".
+Let's combine the two constructed syntax described in previous sections: "[02] R shiny: Dashboard UI" and "[03] R shiny: Create login page".
 
 
 ```{r, eval=FALSE}

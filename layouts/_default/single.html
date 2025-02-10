@@ -2,9 +2,26 @@
 {{ partial "header.html" . }}
 
 <div class="container">
-
     <main class="content">
+
+            {{ if not (or (eq .RelPermalink "/about/") (eq .RelPermalink "/gam-tool/") (eq .RelPermalink "/resources/")) }}
+                <nav class="post-navigation">
+                {{ with .PrevInSection }}
+                <a class="prev-post" href="{{ .RelPermalink }}">
+                    &larr; {{ .Title }}
+                </a>
+                {{ end }}
+                {{ with .NextInSection }}
+                <a class="next-post" href="{{ .RelPermalink }}">
+                    {{ .Title }} &rarr;
+                </a>
+                {{ end }}
+                </nav>
+                <hr>
+            {{ end }}
+    
         <article class="article">
+        
             {{ if or (eq .Section "post") }}
             <span class="article-duration">{{ .ReadingTime }} min read</span>
             {{ end }}
@@ -21,6 +38,7 @@
                 {{ end }}
                 {{ .Content }}
             </div>
+            
         </article>
 
         {{ partial "disqus.html" .}}
