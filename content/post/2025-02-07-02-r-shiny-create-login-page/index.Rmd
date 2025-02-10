@@ -57,11 +57,11 @@ ui <- fluidPage(
                
                h2("Welcome to Login Page!"),  # Heading text
                
-               textInput(inputId = "subscribe_email", 
+               textInput(inputId = "login_email", 
                          label = HTML('Email (<span style="color: red;">required</span>)'), 
                          value = ""),  # Required email input field with HTML formatting
                
-               textInput(inputId = "subscribe_affil", 
+               textInput(inputId = "login_affil", 
                          label = "Affiliation (optional)", value = "")  # Optional affiliation input field
              ),
              

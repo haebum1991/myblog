@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Leestory</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Fri, 07 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 10 Feb 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="//localhost:4321/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[03] R shiny: Hide/Show login page</title>
+      <link>//localhost:4321/2025/03-r-shiny-hide-show-login-page/</link>
+      <pubDate>Mon, 10 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:4321/2025/03-r-shiny-hide-show-login-page/</guid>
+      <description>&lt;style&gt;&#xD;&#xA;pre code {&#xD;&#xA;    font-size: 14px;&#xD;&#xA;}&#xD;&#xA;&lt;/style&gt;&#xD;&#xA;&lt;p&gt;As explained in the previous post, creating a simulated login page in R Shiny is straightforward.&#xD;&#xA;This post demonstrates how to toggle the visibility of the login page,&#xD;&#xA;allowing a seamless transition from the login page to the main page.&#xD;&#xA;This content includes the necessary information for the &lt;code&gt;server&lt;/code&gt; section.&#xD;&#xA;The main focus of this post is to explain the transition of the login page using &lt;code&gt;actionButton()&lt;/code&gt;. The part where the user enters an email and proceeds will not be covered in this post.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>[02] R shiny: Create login page</title>
       <link>//localhost:4321/2025/02-r-shiny-create-login-page/</link>
