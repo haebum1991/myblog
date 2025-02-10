@@ -272,17 +272,26 @@ Next time you’ll learn how to utilize these.</p>
 
 </div>
 
-      <footer class="footer">
-        <ul class="footer-links">
-          
-          <li>
-            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="/images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
-          </li>
-        </ul>
-      </footer>
 
-    </div>
+<footer class="footer-container">
+  <ul class="footer-links">
     
+    <li>
+      <a href="https://gohugo.io/" class="footer-links-kudos">
+        Made with 
+        <img src="/images/hugo-logo.png" alt="Hugo Logo" width="22" height="22">
+      </a>
+    </li>
+  </ul>
+
+  <p class="footer-copyright">  
+    Copyright © 2025 Leestory. All rights reserved.
+  </p>
+
+  <button id="back-to-top" onclick="scrollToTop()">▲ Back to Top</button>
+</footer>
+
+
 
 
 
@@ -296,13 +305,27 @@ Next time you’ll learn how to utilize these.</p>
 
 
 
-    
+
 <script src="/js/math-code.js"></script>
 <script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 
 
-    
-  </body>
-</html>
+
+
+<script>
+  function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
+  window.addEventListener("scroll", function() {
+      const button = document.getElementById("back-to-top");
+      if (window.scrollY > 300) {
+          button.style.display = "block";
+      } else {
+          button.style.display = "none";
+      }
+  });
+</script>
+
 
 
