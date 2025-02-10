@@ -309,6 +309,12 @@ img {
   background-color: #0056b3;
 }
 
+#disqus_thread {
+    border-top: 2px solid #ddd;
+    padding-top: 20px;
+    margin-top: 60px;  
+}
+
 .widget {
     background: #f3eaff;
     padding: 5px;
