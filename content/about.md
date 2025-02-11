@@ -35,8 +35,10 @@ Hello, and Welcome to my Blog!
 I am a scientist who focus on the multifaceted study of air quality and atmospheric phenomena, 
 including the analysis of wildfire smoke on ozone, air pollutant monitoring, and 
 the utilization of satellite and remote sensing data to assess atmospheric parameters. 
-I am also deeply engaged in studying the physicochemical properties of atmospheric aerosols, 
-the dynamics of new particle formation (NPF), and 
+I am also deeply engaged in studying 
+the wildfire smoke impacts on air quality, 
+the physicochemical properties of atmospheric aerosols,  
+the dynamics of new particle formation, and 
 the development of predictive models using machine learning.
 
 This blog is to explain R techniques and how to integrate them into your research. 
