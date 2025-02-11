@@ -1,0 +1,178 @@
+
+---
+title: "Projects"
+---
+
+<br>
+<div class="card-about">
+<h2> Impact of wildfire smoke on air quality in the United States </h2>
+<hr>
+<p> 
+<b>Objectives</b>: Quantifying the impact of wildfire emissions on surface ozone
+<br>
+<b>Dates of project initiation and completion</b>: 04/2023–present 
+</p>
+<hr>
+<div style="flex: 1; margin-top: 10px;">
+  <img src="/images/project_1.png" width="100%" alt="Project 1">
+</div>
+
+---
+### 📚 Related Publications
+<ul style="font-size: 16px;">
+  <li><b>Lee, H.</b> and Jaffe, D. A.: 
+  Wildfire impacts on O3 in the continental United States using PM2.5 and a generalized additive model (2018–2023), 
+  <em>Environ. Sci. Technol.</em>, 58, 14764–14774, 2024.
+  <a href="https://doi.org/10.1021/acs.est.4c05870" target="_blank">https://doi.org/10.1021/acs.est.4c05870</a>
+  </li>
+  
+  <li><b>Lee, H.</b> and Jaffe, D. A.: 
+  Impact of wildfire smoke on ozone concentrations using a Generalized Additive model in Salt Lake City, Utah, USA, 2006–2022, 
+  <em>J. Air Waste Manag. Assoc.</em>, 74, 116–130, 2024.
+  <a href="https://doi.org/10.1080/10962247.2023.2291197" target="_blank">https://doi.org/10.1080/10962247.2023.2291197</a>
+  </li>
+  
+  <li>Jaffe, D. A.,  Ninneman, M., Nguyen, L., <b>Lee, H.</b>, Hu, L., Ketcherside, D., Jin L., Cope, E., Lyman, S., Jones, C., ONeli, T., Mansfield, M. L.: 
+  Key results from the Salt Lake regional smoke, ozone and Aerosol study (SAMOZA), 
+  <em>J. Air Waste Manag. Assoc.</em>, 74, 163–180, 2024.
+  <a href="https://doi.org/10.1080/10962247.2024.2301956" target="_blank">https://doi.org/10.1080/10962247.2024.2301956</a>
+  </li>
+</ul>
+</div>
+
+
+<hr>
+<div class="card-about">
+<h2> A study on the comprehensive characteristics of fine particulate matter (PM2.5): impacts, monitoring, and public health applications </h2>
+<hr>
+<p> 
+<b>Objectives</b>: 
+1) Analyzing the chemical composition, sources, and transport of PM2.5 in winter haze over China and Korea and spring pollution over the Yellow Sea.
+2) Developing advanced classification methods using machine learning to better understand fine particle characteristics and their health impacts.
+3) Evaluating the performance and sustainability of face masks in filtering fine particles under various environmental conditions.
+<br>
+<b>Dates of project initiation and completion</b>: 01/2017–12/2022 
+</p>
+<hr>
+<div style="flex: 1; margin-top: 10px;">
+  <img src="/images/project_2.png" width="100%" alt="Project 2">
+</div>
+
+---
+### 📚 Related Publications
+<ul>
+  <li>Khadgi, J., <b>Lee, H.</b>, Seo, J., Hong, J.-H., and Park, K.: 
+  Morphological classification of fine particles in transmission electron microscopy images by using pre-trained convolution neural networks, 
+  <em>Aerosol Sci. Technol.</em>, 1–10, 2024. 
+  <a href="https://doi.org/10.1080/02786826.2024.2322010" target="_blank">https://doi.org/10.1080/02786826.2024.2322010</a>
+  </li>
+
+  <li>Park, M., Lee, S., <b>Lee, H.</b>, Denna, M. C. F. J., Jang, J., Oh, D., Bae, M.-S., Jang, K.-S., and Park, K.: 
+  New health index derived from oxidative potential and cell toxicity of fine particulate matter to assess its potential health effect, 
+  <em>Heliyon</em>, 10 (3), e25310, 2024. 
+  <a href="https://doi.org/10.1016/j.heliyon.2024.e25310" target="_blank">https://doi.org/10.1016/j.heliyon.2024.e25310</a>
+  </li>
+
+  <li><b>Kwak, N., Lee, H.</b>, Maeng, H., Seo, A., Lee, K., Kim, S., Lee, M., Cha, J. W., Shin, B., and Park, K.: 
+  Morphological and chemical classification of fine particles over the Yellow Sea during spring, 2015–2018, 
+  <em>Environ. Pollut.</em>, 305, 119286, 2022. 
+  <a href="https://doi.org/10.1016/j.envpol.2022.119286" target="_blank">https://doi.org/10.1016/j.envpol.2022.119286</a>
+  </li>
+
+  <li><b>Lee, H.</b>, Kim, S., Joo, H., Cho, H.-J., and Park, K.: 
+  A study on Performance and Reusability of Certified and Uncertified Face Masks, 
+  <em>Aerosol Air Qual. Res.</em>, 22, 210370, 2022. 
+  <a href="https://doi.org/10.4209/aaqr.210370" target="_blank">https://doi.org/10.4209/aaqr.210370</a>
+  </li>
+
+  <li>Eom, S., <b>Lee, H.</b>, Kim, J., Park, K., Kim, Y., Sheu, G.-R., Gay, D. A., Schmeltz, D., and Han, S.: 
+  Potential sources, scavenging processes, and source regions of mercury in the wet deposition of South Korea, 
+  <em>Sci. Total Environ.</em>, 762, 143934, 2021. 
+  <a href="https://doi.org/10.1016/j.scitotenv.2020.143934" target="_blank">https://doi.org/10.1016/j.scitotenv.2020.143934</a>
+  </li>
+
+  <li><b>Park, M.</b>, Wang, Y., Chong, J., Lee, H., Jang, J., Song, H., Kwak, N., Borlaza, L. J. S., Maeng, H., Cosep, E. M. R., Denna, M. C. F. J., Chen, S., Seo, I., Bae, M.-S., Jang, K.-S., Choi, M., Kim, Y. H., Park, M., Ryu, J.-S., Park, S., Hu, M., and Park, K.: 
+  Simultaneous measurements of chemical characteristics and oxidative potential of fine particles during winter haze period in urban sites in China and Korea, 
+  <em>Atmosphere</em>, 11, 292, 2020. 
+  <a href="https://doi.org/10.3390/atmos11030292" target="_blank">https://doi.org/10.3390/atmos11030292</a>
+  </li>
+</ul>
+
+</div>
+
+
+<hr>
+<div class="card-about">
+<h2> A study on new particle formation (NPF) in the ambient atmosphere in various environments </h2>
+<hr>
+<p> 
+<b>Objectives</b>: Identifying differences of characteristics and governing factors for the NPF among sites
+<br>
+<b>Dates of project initiation and completion</b>: 01/2018–12/2022 
+</p>
+<hr>
+<div style="flex: 1; margin-top: 10px;">
+  <img src="/images/project_3.png" width="100%" alt="Project 3">
+</div>
+
+---
+### 📚 Related Publications
+<ul style="font-size: 16px;">
+  <li><b>Lee, H.</b>, Cho, H., Kim, J., Yoon, Y. J., Lee, B. Y., and Park, K.: 
+  Comparison of new particle formation events in urban, agricultural, and Arctic environments, 
+  <em>Atmos. Environ.</em>, 120634, 2024.
+  <a href="https://doi.org/10.1016/j.atmosenv.2024.120634" target="_blank">https://doi.org/10.1016/j.atmosenv.2024.120634</a>
+  </li>
+  
+  <li><b>Lee, H.</b>, Lee, K., Krejci, R., Fiebig, M., Lunder, C. R., Aas, W., Park, J., Park, K.-T., Lee, B. Y., Yoon, Y.-J., and Park, K.:
+  Atmospheric new particle formation characteristics in the Arctic as measured at Mount Zeppelin, Svalbard, from 2016 to 2018,
+  <em>Atmos. Chem. Phys.</em>, 20, 13425–13441, 2020.
+  <a href="https://doi.org/10.5194/acp-20-13425-2020" target="_blank">https://doi.org/10.5194/acp-20-13425-2020</a>
+  </li>
+</ul>
+</div>
+
+
+<hr>
+<div class="card-about">
+<h2> Development of laser-induced breakdown spectroscopy (LIBS) system and its application in aerosol detection and industry fields </h2>
+<hr>
+<p> 
+<b>Objectives</b>: Exploring the potential of LIBS technique in analyzing elements in flowback water from fracking operations and in detecting contamination particles in industrial processes
+<br>
+<b>Dates of project initiation and completion</b>: 03/2017–02/2020 
+</p>
+<hr>
+<div style="flex: 1; margin-top: 10px;">
+  <img src="/images/project_4.png" width="100%" alt="Project 4">
+</div>
+
+---
+### 📚 Related Publications
+<ul style="font-size: 16px;">
+  <li><b>Lee, H.</b>, Kim, G., Kim, H.-A., Maeng, H., Park, H., and Park, K.: 
+  Application of laser-induced breakdown spectroscopy for detection of elements in flowback water samples from shale gas wells, 
+  <em>Applied Optics</em>, 59, 2254–2261, 2020.
+  <a href="https://doi.org/10.1364/AO.381687" target="_blank">https://doi.org/10.1364/AO.381687</a>
+  </li>
+  
+  <li>Kim, G., Kim, K., Maeng, H., <b>Lee, H.</b>, and Park, K.:
+  Development of Aerosol-LIBS (Laser-Induced Breakdown Spectroscopy) for Real-time Monitoring of Process-induced Particles,
+  <em>Aerosol and Air Quality Research</em>, 19, 455–460, 2019.
+  <a href="https://doi.org/10.4209/aaqr.2018.08.0312" target="_blank">https://doi.org/10.4209/aaqr.2018.08.0312</a>
+  </li>
+  
+  <li><b>Lee, H.</b>, Maeng, H., Kim, K., Kim, G., and Park, K.:
+  Application of laser-induced breakdown spectroscopy for real-time detection of contamination particles during the manufacturing process,
+  <em>Applied Optics</em>, 57 (12), 3288–3292, 2018.
+  <a href="https://doi.org/10.1364/AO.57.003288" target="_blank">https://doi.org/10.1364/AO.57.003288</a>
+  </li>
+  
+  <li>Maeng, H., Chae, H., Lee, H., Kim, G., <b>Lee, H.</b>, Kim, K., Kwak, J., Cho, G., and Park, K.:
+  Development of laser-induced breakdown spectroscopy (LIBS) with times ablation to improve detection efficiency,
+  <em>Aerosol Science and Technology</em>, 51, 1009–1015, 2017.
+  <a href="https://doi.org/10.1080/02786826.2017.1344352" target="_blank">https://doi.org/10.1080/02786826.2017.1344352</a>
+  </li>
+</ul>
+</div>
+

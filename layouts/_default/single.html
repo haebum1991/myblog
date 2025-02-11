@@ -4,7 +4,7 @@
 <div class="container">
     <main class="content">
 
-            {{ if not (or (eq .RelPermalink "/about/") (eq .RelPermalink "/gam-tool/") (eq .RelPermalink "/resources/")) }}
+            {{ if not (or (eq .RelPermalink "/about/") (eq .RelPermalink "/gam-tool/") (eq .RelPermalink "/resources/") (eq .RelPermalink "/projects/")) }}
                 <nav class="post-navigation">
                 {{ with .PrevInSection }}
                 <a class="prev-post" href="{{ .RelPermalink }}">

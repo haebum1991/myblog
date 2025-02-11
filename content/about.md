@@ -20,11 +20,11 @@ Bothell, WA, United States<br>
   </a>
   &nbsp;&nbsp;
   <a href="https://orcid.org/0009-0001-2045-8532" target="_blank">
-    <img src="/images/ORCID_logo.png" width="30" height="30" alt="GitHub">
+    <img src="/images/ORCID_logo.png" width="30" height="30" alt="ORCID">
   </a>
   &nbsp;&nbsp;
   <a href="https://scholar.google.com/citations?user=98LKhgUAAAAJ&hl" target="_blank">
-    <img src="/images/ggscholar_logo.png" width="30" height="30" alt="GitHub">
+    <img src="/images/ggscholar_logo.png" width="30" height="30" alt="GGS">
   </a>
 </span>
 <hr>

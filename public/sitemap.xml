@@ -30,6 +30,8 @@
   </url><url>
     <loc>//localhost:4321/about/</loc>
   </url><url>
+    <loc>//localhost:4321/projects/</loc>
+  </url><url>
     <loc>//localhost:4321/resources/</loc>
   </url><url>
     <loc>//localhost:4321/tags/</loc>
