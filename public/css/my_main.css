@@ -243,6 +243,48 @@ img {
 }
 
 
+
+/* Card design */
+.card-about {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #7D1FA3;
+    padding: 20px 20px 5px 20px;
+    max-width: 100%;
+    margin: auto;
+    border-top: 1px solid #7D1FA3;
+    border-left: 1px solid #7D1FA3;
+}
+
+.card-about h2 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.card-about h3 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.17rem;
+}
+
+.card-about p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.card-about a {
+    font-weight: bold;
+    color: #007acc;
+    text-decoration: none;
+}
+
+.card-about a:hover {
+    text-decoration: underline;
+}
+
+
+
 /* Post previous-Next post setting */
 .post-navigation {
   display: flex;

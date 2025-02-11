@@ -8,7 +8,7 @@ title: "GAM tool using R shiny "
   </a>
 </div>
 
-<h3 style="font-weight: bold;">Purpose of tool</h3>
+<h2 style="font-weight: bold;">Purpose of tool</h2>
 
 <p>The purpose of this app is to demonstrate the application of 
 <b>General Additive Modeling (GAM)</b> for predicting MDA8 O3 using meteorological data under both smoke and non-smoke conditions.

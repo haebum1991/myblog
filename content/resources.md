@@ -3,7 +3,9 @@
 title: "Resources"
 ---
 
-<h3 style="font-weight: bold;">Useful data archives </h3>
+<br>
+<div class="card-about">
+<h2 style="font-weight: bold;">For useful data archives </h2>
 
 <ul style="font-size: 16px;">
   <li>
@@ -111,9 +113,12 @@ title: "Resources"
     Copernicus Sentinel-5P Product Algorithm Laboratory (S5P-PAL) Data Portal (Level-2 and Level-3)
   </li>
 </ul>
+</div>
 
 
-<h3 style="font-weight: bold;">Resources for spatial information </h3>
+---
+<div class="card-about">
+<h2 style="font-weight: bold;">For spatial information </h2>
 
 <ul style="font-size: 16px;">
   <li>
@@ -129,9 +134,12 @@ title: "Resources"
     US Department of Transportation: ArcGIS Online, Core-Based Statistical Areas
   </li>
 </ul>
+</div>
 
 
-<h3 style="font-weight: bold;">Resources for wildfire information </h3>
+---
+<div class="card-about">
+<h2 style="font-weight: bold;">For wildfire information </h2>
 <ul style="font-size: 16px;">
   <li>
     <a href="https://cwfis.cfs.nrcan.gc.ca/report/archives?year=2013&month=09&day=04&process=Submit" target="_blank">NRC:</a>
@@ -150,9 +158,12 @@ title: "Resources"
     Wildland Fire Emissions Inventory System (WFEIS) - assessments of historical wildland fire emissions across US, Canada, and global boreal regions
   </li>
 </ul>
+</div>
 
 
-<h3 style="font-weight: bold;">Resources for models </h3>
+---
+<div class="card-about">
+<h2 style="font-weight: bold;">For models </h2>
 <ul style="font-size: 16px;">
   <li>
     <a href="https://www.epa.gov/scram/aermod-modeling-system-development" target="_blank">EPA AERMOD:</a>
@@ -167,5 +178,5 @@ title: "Resources"
     Stochastic Time-Inverted Lagrangian Transport Model v2.x (STILT)
   </li>
 </ul>
-
+</div>
 

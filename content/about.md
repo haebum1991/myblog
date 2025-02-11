@@ -27,9 +27,10 @@ Bothell, WA, United States<br>
     <img src="/images/ggscholar_logo.png" width="30" height="30" alt="GitHub">
   </a>
 </span>
-
 <hr>
-</p>
+
+
+<div class="card-about">
 Hello, and Welcome to my Blog!
 I am a scientist who focus on the multifaceted study of air quality and atmospheric phenomena, 
 including the analysis of wildfire smoke on ozone, air pollutant monitoring, and 
@@ -40,9 +41,11 @@ the development of predictive models using machine learning.
 
 This blog is to explain R techniques and how to integrate them into your research. 
 I hope everything is useful, thank you.
+</div>
 
 ---
-<h3 style="font-weight: bold;">Research Interests</h3>
+<div class="card-about">
+<h2 style="font-weight: bold;">Research Interests</h2>
 
 - Wildfire smoke impacts on air quality
 - Air pollutant & air quality monitoring
@@ -53,9 +56,11 @@ I hope everything is useful, thank you.
 - Development of NPF-related and particle morphology prediction model using machine-learning techniques
 - Characterization of nanoparticles and sub-micrometer particles in the ambient atmosphere
 - Analysis of morphology and elemental composition of ultrafine particles in the ambient atmosphere
+</div>
 
 ---
-<h3 style="font-weight: bold;">Education & Experiences</h3>
+<div class="card-about">
+<h2 style="font-weight: bold;">Education & Experiences</h2>
 
 - **Postdoc / 2023.04-present**  
   <span style="font-size: 16px;"> 
@@ -82,9 +87,11 @@ I hope everything is useful, thank you.
   Chemistry,
   Kyung Hee University, Seoul, Republic of Korea
   </span>
-  
+</div>
+
 ---
-<h3 style="font-weight: bold;">Technical skills</h3>
+<div class="card-about">
+<h2 style="font-weight: bold;">Technical skills</h2>
 
 - **Aerosol measurement techniques & Instrumentation**  
   - Condensation particle counter (CPC)  
@@ -105,4 +112,5 @@ I hope everything is useful, thank you.
   - Statistical analysis using R  
   - Data collection based on Application Programming Interface (API) using R  
   - Image pretreatment and analysis using R  
+</div>
 
