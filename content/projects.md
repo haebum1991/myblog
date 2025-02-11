@@ -10,7 +10,7 @@ title: "Projects"
 <p> 
 <b>Objectives</b>: Quantifying the impact of wildfire emissions on surface ozone
 <br>
-<b>Dates of project initiation and completion</b>: 04/2023–present 
+<b>Dates of project initiation and completion</b>: 2023.04.–present 
 </p>
 <hr>
 <div style="flex: 1; margin-top: 10px;">
@@ -51,7 +51,7 @@ title: "Projects"
 2) Developing advanced classification methods using machine learning to better understand fine particle characteristics and their health impacts.
 3) Evaluating the performance and sustainability of face masks in filtering fine particles under various environmental conditions.
 <br>
-<b>Dates of project initiation and completion</b>: 01/2017–12/2022 
+<b>Dates of project initiation and completion</b>: 2017.01.–2022.12. 
 </p>
 <hr>
 <div style="flex: 1; margin-top: 10px;">
@@ -108,7 +108,7 @@ title: "Projects"
 <p> 
 <b>Objectives</b>: Identifying differences of characteristics and governing factors for the NPF among sites
 <br>
-<b>Dates of project initiation and completion</b>: 01/2018–12/2022 
+<b>Dates of project initiation and completion</b>: 2018.01.–2022.12. 
 </p>
 <hr>
 <div style="flex: 1; margin-top: 10px;">
@@ -140,7 +140,7 @@ title: "Projects"
 <p> 
 <b>Objectives</b>: Exploring the potential of LIBS technique in analyzing elements in flowback water from fracking operations and in detecting contamination particles in industrial processes
 <br>
-<b>Dates of project initiation and completion</b>: 03/2017–02/2020 
+<b>Dates of project initiation and completion</b>: 2017.03.–2020.02. 
 </p>
 <hr>
 <div style="flex: 1; margin-top: 10px;">
