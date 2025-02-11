@@ -503,6 +503,27 @@ span.social-links a {
 }
 
 @media (max-width: 600px) {
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
+    
+    .card-about h2 {
+        margin: 0;
+        font-weight: bold;
+        font-size: 1.25rem;
+    }
+
+    .card-about h3 {
+        margin: 0;
+        font-weight: bold;
+        font-size: 1.1rem;
+    }
+    
     .container {
         flex-direction: column;
         max-width: 100%;
@@ -574,7 +595,7 @@ span.social-links a {
         padding: 15px 0;
         font-size: 14px;
     }
-    
+
     .widget, .sidebar {
         width: 99%;
     }
