@@ -1,10 +1,10 @@
 
 ---
-title: "GAM tool using R shiny "
+title: "GAM & PM2.5 and O3 smoke tool"
 ---
 <div style="text-align: left;">
-  <a href="https://smoke.shinyapps.io/rsGAM/" target="_blank" style="font-size: 16px;">
-    https://smoke.shinyapps.io/rsGAM/
+  <a href="https://westar.shinyapps.io/PMO3smokeTool/" target="_blank" style="font-size: 16px;">
+    https://westar.shinyapps.io/PMO3smokeTool/
   </a>
 </div>
 
@@ -38,8 +38,10 @@ and also allows viewing the results of previously studied GAMs.</p>
 Here, you can download data and set up the GAM based on your goals and your understanding of ozone in your local region.
 This feature is generally intended for expert users who are familiar with statistical models for ozone.</p>
 <p>If you want to see the results from our runs, 
-which have been published in peer-reviewed journals or are soon to undergo peer review, please go to the <b>[GAM previous]</b> tab.
-Here, you can plot and download results in a variety of formats.</p>
+which have been published in peer-reviewed journals or are soon to undergo peer review, 
+please go to the <b>[GAM previous]</b> tab.
+<b style="color: blue;">We also provide various research results on PM2.5 and O3 smoke in this tab.</b>
+You can plot and download results in a variety of formats.</p>
 
 <p>This app was created by Dan Jaffe and Haebum Lee, University of Washington (UW).<br>
 Please send any feedback or bug reports to: <b>Dan Jaffe</b> 
