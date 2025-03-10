@@ -1,90 +1,26 @@
 
-<!DOCTYPE html>
-<html lang="en-US">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=4321&amp;path=livereload" data-no-instant defer></script>
-    <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.143.1">
-
-
-<title>GAM &amp; PM2.5 and O3 smoke tool - Leestory</title>
-<meta property="og:title" content="GAM &amp; PM2.5 and O3 smoke tool - Leestory">
-
-
-
-
-  
-
-
-
-
-
-
-
-<link rel="stylesheet" href="/css/my_fonts.css" media="all">
-<link rel="stylesheet" href="/css/my_main.css" media="all">
-
-
-
-  </head>
-  <body>
-    <div class="wrapper">
-      <header class="header">
-        
-<nav class="nav">
-  <a href="/" class="nav-logo">
-    <img src="/images/my_logo_2.png"
-         width="50"
-         height="50"
-         alt="Logo">
-  </a>
-
-  <ul class="nav-links">
-    
-    <li><a href="/about/">About</a></li>
-    
-    <li><a href="/projects/">Projects</a></li>
-    
-    <li><a href="/gam-tool/">GAM tool</a></li>
-    
-    <li><a href="/resources/">Resources</a></li>
-    
-  </ul>
-</nav>
-
-
-      </header>
-
-
-<div class="container">
-    <main class="content">
-
-            
-    
-        <article class="article">
-        
-            
-
-            <h1 class="article-title">GAM &amp; PM2.5 and O3 smoke tool</h1>
-
-            
-
-            <div class="article-content">
-                
-                <div style="text-align: left;">
+---
+title: "GAM & PM2.5 and O3 smoke tool"
+---
+<div style="text-align: left;">
   <a href="https://westar.shinyapps.io/PMO3smokeTool/" target="_blank" style="font-size: 16px;">
     https://westar.shinyapps.io/PMO3smokeTool/
   </a>
 </div>
+
 <h2 style="font-weight: bold;">Purpose of tool</h2>
+
 <p>The purpose of this app is to demonstrate the application of 
 <b>General Additive Modeling (GAM)</b> for predicting MDA8 O3 using meteorological data under both smoke and non-smoke conditions.
 In this app, a GAM is derived using the "mgcv" package in R. We hope this tool will be useful for state agencies and others 
 in understanding the factors that control ozone production.</p>
+
 <img src="/images/rsGAM_page_sample.png" alt="R shiny">
+
 <div style="text-align: center;">
-  Example page in the GAM tool app
+  Example page in the Smoke tool app
 </div>
+
 <p><b>The GAM</b> is a statistical or machine learning framework that provides interpretability 
 by applying smoothing functions to individual variables. Notably, GAMs can incorporate linear,
 nonlinear, and categorical predictors, providing flexibility for modeling complex relationships 
@@ -97,6 +33,7 @@ This study demonstrated the importance of wildfire smoke as contributors to exce
 This app offers options to easily build a GAM using the <b>"mgcv"</b> package 
 <a href="https://CRAN.R-project.org/package=mgcv" target="_blank">(Wood, 2023)</a>
 and also allows viewing the results of previously studied GAMs.</p>
+
 <p>If you want to run your own GAM applications, go to the <b>[GAM manual]</b> tab.
 Here, you can download data and set up the GAM based on your goals and your understanding of ozone in your local region.
 This feature is generally intended for expert users who are familiar with statistical models for ozone.</p>
@@ -105,10 +42,12 @@ which have been published in peer-reviewed journals or are soon to undergo peer 
 please go to the <b>[GAM previous]</b> tab.
 <b style="color: blue;">We also provide various research results on PM2.5 and O3 smoke in this tab.</b>
 You can plot and download results in a variety of formats.</p>
+
 <p>This app was created by Dan Jaffe and Haebum Lee, University of Washington (UW).<br>
 Please send any feedback or bug reports to: <b>Dan Jaffe</b> 
 (<a href="mailto:djaffe@uw.edu">djaffe@uw.edu</a>) and 
 <b>Haebum Lee</b> (<a href="mailto:haebum1991@gmail.com">haebum1991@gmail.com</a>).</p>
+
 <p style="font-size: 16px;">Related GAM references:</p>
 <ul style="font-size: 16px;">
   <li>Lee, H. and Jaffe, D. A.: Wildfire impacts on O3 in the continental United States using PM2.5 and a generalized additive model (2018–2023), Environ. Sci. Technol., 58, 14764–14774, 2024.
@@ -124,96 +63,4 @@ Please send any feedback or bug reports to: <b>Dan Jaffe</b>
   <li>Gong, X., et al.: Quantifying O3 Impacts in Urban Areas Due to Wildfires Using a Generalized Additive Model, Environ. Sci. Technol., 51, 13216–13223, 2017.
   <a href="https://doi.org/10.1021/acs.est.7b03130" target="_blank">https://doi.org/10.1021/acs.est.7b03130</a></li>
 </ul>
-
-            </div>
-            
-        </article>
-
-        
-<section id="comments">
-  <div id="disqus_thread"></div>
-  <script>
-  var disqus_config = function () {
-  
-  };
-  (function() {
-    var inIFrame = function() {
-      var iframe = true;
-      try { iframe = window.self !== window.top; } catch (e) {}
-      return iframe;
-    };
-    if (inIFrame()) return;
-    var d = document, s = d.createElement('script');
-    s.src = '//haebum1991.disqus.com/embed.js'; s.async = true;
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-  })();
-  </script>
-  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</section>
-
-
-    </main>
-
-    <aside class="sidebar">
-        
-<section class="widget">
-    <h3>Archive category</h3>
-    <br>
-    <ul>
-        
-        <li>
-            <a href="/categories/r-shiny">r-shiny</a> (4)
-        </li>
-        
-    </ul>
-</section>
-
-
-
-    </aside>
-
-</div>
-
-
-<footer class="footer-container">
-  <ul class="footer-links">
-    
-    <li>
-      <a href="https://gohugo.io/" class="footer-links-kudos">
-        Made with 
-        <img src="/images/hugo-logo.png" alt="Hugo Logo" width="22" height="22">
-      </a>
-    </li>
-  </ul>
-
-  <p class="footer-copyright">  
-    Copyright © 2025 Leestory. All rights reserved.
-  </p>
-
-  <button id="back-to-top" onclick="scrollToTop()">▲ Back to Top</button>
-</footer>
-
-
-
-
-
-
-
-<script>
-  function scrollToTop() {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-  }
-
-  window.addEventListener("scroll", function() {
-      const button = document.getElementById("back-to-top");
-      if (window.scrollY > 300) {
-          button.style.display = "block";
-      } else {
-          button.style.display = "none";
-      }
-  });
-</script>
-
-
 

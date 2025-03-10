@@ -20,8 +20,8 @@ disqusShortname = "haebum1991"
     weight = 2
     
 [[menu.main]]
-    name = "GAM tool"
-    url = "/gam-tool/"
+    name = "Smoke tool"
+    url = "/smoke-tool/"
     weight = 3
 
 [[menu.main]]
