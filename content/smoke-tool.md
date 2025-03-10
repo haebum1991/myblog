@@ -11,7 +11,7 @@ title: "GAM & PM2.5 and O3 smoke tool"
 <h2 style="font-weight: bold;">Purpose of tool</h2>
 
 <p>The purpose of this app is to demonstrate the application of 
-<b>General Additive Modeling (GAM)</b> for predicting MDA8 O3 using meteorological data under both smoke and non-smoke conditions.
+<b>Generalized Additive Modeling (GAM)</b> for predicting MDA8 O3 using meteorological data under both smoke and non-smoke conditions.
 In this app, a GAM is derived using the "mgcv" package in R. We hope this tool will be useful for state agencies and others 
 in understanding the factors that control ozone production.</p>
 
