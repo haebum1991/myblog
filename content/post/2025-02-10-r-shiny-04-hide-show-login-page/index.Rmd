@@ -33,7 +33,7 @@ library(htmltools)
 ```
 
 
-Let's combine the two constructed syntax described in previous sections: "[02] R shiny: Dashboard UI" and "[03] R shiny: Create login page".
+Let's combine the two constructed syntax described in previous sections: "R shiny [02]: Dashboard UI" and "R shiny [03]: Create login page".
 
 
 ```{r, eval=FALSE}

@@ -6,8 +6,15 @@
     <description>Recent content on Leestory</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Mon, 10 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 10 Mar 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="//localhost:4321/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Smoke tool tutorial [01]: GAM manual - Data collection</title>
+      <link>//localhost:4321/2025/smoke-tool-tutorial-01-gam-manual-data-collection/</link>
+      <pubDate>Mon, 10 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:4321/2025/smoke-tool-tutorial-01-gam-manual-data-collection/</guid>
+      <description>&lt;style&gt;&#xD;&#xA;pre code {&#xD;&#xA;    font-size: 14px;&#xD;&#xA;}&#xD;&#xA;&lt;/style&gt;&#xD;&#xA;&lt;p&gt;Coming soon&lt;/p&gt;</description>
+    </item>
     <item>
       <title>R shiny [04]: Hide/Show login page</title>
       <link>//localhost:4321/2025/r-shiny-04-hide-show-login-page/</link>

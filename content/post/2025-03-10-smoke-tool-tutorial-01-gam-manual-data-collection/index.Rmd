@@ -1,0 +1,17 @@
+---
+title: 'Smoke tool tutorial [01]: GAM manual - Data collection'
+author: Haebum Lee
+date: '2025-03-10'
+slug: smoke-tool-tutorial-01-gam-manual-data-collection
+categories:
+  - SmokeTool-tutorial
+tags: []
+---
+
+<style>
+pre code {
+    font-size: 14px;
+}
+</style>
+
+Coming soon

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SmokeTool-Tutorial on Leestory</title>
+    <link>//localhost:4321/categories/smoketool-tutorial/</link>
+    <description>Recent content in SmokeTool-Tutorial on Leestory</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 10 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:4321/categories/smoketool-tutorial/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Smoke tool tutorial [01]: GAM manual - Data collection</title>
+      <link>//localhost:4321/2025/smoke-tool-tutorial-01-gam-manual-data-collection/</link>
+      <pubDate>Mon, 10 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:4321/2025/smoke-tool-tutorial-01-gam-manual-data-collection/</guid>
+      <description>&lt;style&gt;&#xD;&#xA;pre code {&#xD;&#xA;    font-size: 14px;&#xD;&#xA;}&#xD;&#xA;&lt;/style&gt;&#xD;&#xA;&lt;p&gt;Coming soon&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
