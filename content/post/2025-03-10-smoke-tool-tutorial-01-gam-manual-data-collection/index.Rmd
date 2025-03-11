@@ -75,6 +75,7 @@ And then, when you click the `map icon`, the site location will be displayed on 
 6. Let's click on the site (red-filled circle) on the map.
 Then, the list of O3 monitoring site at this location will be added to the `[List of Selected Sites]` box.
 In the same way, PM2.5 and ASOS sites can also be added.
+Note that if you want to clear the list, click the `clear list` button.
 
 <div style="text-align: center;">
   <img src="06_SmokeTool_tutorial_gam_manual_data_collection.png">
@@ -102,14 +103,14 @@ depending on the period.
 </div>
 
 <hr>
-9. Once data collection is complete, the collected data will be displayed in the box below (`O3 data`, `PM2.5 data`, and/or `ASOS data`). If you want to download the collected data, you just click on `Save data` button for each data type.
+9. Once data collection is complete, the collected data will be displayed in the box below (`O3 data`, `PM2.5 data`, and/or `ASOS data`). If you want to download the collected data, you just click on the `Save data` button for each data type.
 
 <div style="text-align: center;">
   <img src="09_SmokeTool_tutorial_gam_manual_data_collection.png">
 </div>
 
 <hr>
-10. When you click `Merge data`, collected data (O3, PM2.5, and/or ASOS) will be merged, and the detailed steps are as follows:
+10. When you click the `Merge data`, collected data (O3, PM2.5, and/or ASOS) will be merged, and the detailed steps are as follows:
 - For O3 and PM2.5 EPA data, if a site has multiple measurements, as indicated by the 'POC (Parameter Occurrence Code)' column, average all valid observations.
 - The data priority is O3 > PM2.5 > ASOS, and when O3 data are available, the nearest PM2.5 and ASOS data based on the O3 measurement site will be merged.
 - If O3 data are invalid or unavailable, the nearest ASOS data based on the PM2.5 measurement site will be merged.
@@ -119,8 +120,8 @@ depending on the period.
 </div>
 
 <hr>
-11. If the data you collected includes PM2.5 data, the previously hidden `[HMS and PM2.5-Criteria]` tab will become visible.
-This tab provides a tool for calculating PM2.5-criteria using `merged data`. 
+11. If the data you collected includes PM2.5 data, the previously hidden the `[HMS and PM2.5-Criteria]` tab will become visible.
+This tab provides a tool for calculating PM2.5-criteria using the `merged data`. 
 For more details, please refer to our previous papers 
 ([Lee and Jaffe, 2024a](https://doi.org/10.1080/10962247.2023.2291197){target="_blank"};
 [Lee and Jaffe, 2024b](https://doi.org/10.1021/acs.est.4c05870){target="_blank"}).
