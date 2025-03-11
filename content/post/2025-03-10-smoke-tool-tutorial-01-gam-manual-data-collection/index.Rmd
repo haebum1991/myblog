@@ -73,7 +73,7 @@ And then, when you click the `map icon`, the site location will be displayed on 
 
 <hr>
 6. Let's click on the site (red-filled circle) on the map.
-Then, the list of O3 monitoring site at this location will be added to the `[List of Selected Sites]` box.
+Then, the list of O3 monitoring site at this location will be added to the `[List of selected sites]` box.
 In the same way, PM2.5 and ASOS sites can also be added.
 Note that if you want to clear the list, click the `Clear list` button.
 
@@ -83,7 +83,7 @@ Note that if you want to clear the list, click the `Clear list` button.
 
 <hr>
 7. To collect EPA data (excluding IEM-ASOS), you will need your email and an EPA API key.
-If you do not have an EPA API key, enter your email in the box and click the `Get Key` button.
+If you do not have an EPA API key, enter your email in the box and click the `Get key` button.
 You should receive an email with your EPA API key within a few minutes.
 If you want to know detailed instructions, please visit the EPA API official website ([here](https://aqs.epa.gov/aqsweb/documents/data_api.html#signup){target="_blank"}).
 
@@ -121,11 +121,11 @@ depending on the period.
 
 <hr>
 11. If the data you collected includes PM2.5 data, the previously hidden the `[HMS and PM2.5-Criteria]` tab will become visible.
-This tab provides a tool for calculating PM2.5-criteria using the `merged data`. 
+This tab provides a tool for calculating PM2.5-criteria using the `Merged data`. 
 For more details, please refer to our previous papers 
 ([Lee and Jaffe, 2024a](https://doi.org/10.1080/10962247.2023.2291197){target="_blank"};
 [Lee and Jaffe, 2024b](https://doi.org/10.1021/acs.est.4c05870){target="_blank"}).
-Once the options are set, click the `Run Process` button.
+Once the options are set, click the `Run process` button.
 Then, the processed data, including the `HMS` and `PM2.5-criteria` columns, will be displayed in the box below.
 If you want to download the data, click the `Save data` button.
 
