@@ -1,8 +1,8 @@
 ---
-title: '[01] R shiny: Getting started'
+title: 'R shiny [01]: Getting started'
 author: Haebum Lee
 date: '2025-02-04'
-slug: 01-r-shiny-getting-started
+slug: r-shiny-01-getting-started
 featuredImage: "01_Shiny_web_app.png"
 categories:
   - R-shiny

@@ -1,8 +1,8 @@
 ---
-title: '[04] R shiny: Hide/Show login page'
+title: 'R shiny [04]: Hide/Show login page'
 author: Haebum Lee
 date: '2025-02-10'
-slug: 04-r-shiny-hide-show-login-page
+slug: r-shiny-04-hide-show-login-page
 featuredImage: "01_Shiny_hide_show_login_page.png"
 categories:
   - R-shiny

@@ -1,8 +1,8 @@
 ---
-title: '[02] R shiny: Dashboard UI'
+title: 'R shiny [02]: Dashboard UI'
 author: Haebum Lee
 date: '2025-02-05'
-slug: 02-r-shiny-dashboard-ui
+slug: r-shiny-02-dashboard-ui
 featuredImage: "01_Shiny_main_page.png"
 categories:
   - R-shiny
