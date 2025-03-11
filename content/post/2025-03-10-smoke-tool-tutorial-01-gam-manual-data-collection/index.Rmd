@@ -75,7 +75,7 @@ And then, when you click the `map icon`, the site location will be displayed on 
 6. Let's click on the site (red-filled circle) on the map.
 Then, the list of O3 monitoring site at this location will be added to the `[List of Selected Sites]` box.
 In the same way, PM2.5 and ASOS sites can also be added.
-Note that if you want to clear the list, click the `clear list` button.
+Note that if you want to clear the list, click the `Clear list` button.
 
 <div style="text-align: center;">
   <img src="06_SmokeTool_tutorial_gam_manual_data_collection.png">
