@@ -1,6 +1,6 @@
 
 ---
-title: "GAM & PM2.5 and O3 smoke tool"
+title: "GAM & PM2.5 and O3 smoke tool (PMO3smokeTool)"
 ---
 <div style="text-align: left;">
   <a href="https://westar.shinyapps.io/PMO3smokeTool/" target="_blank" style="font-size: 16px;">

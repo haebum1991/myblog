@@ -37,7 +37,7 @@
       <description>&lt;div id=&#34;r-shiny&#34; class=&#34;section level2&#34;&gt;&#xD;&#xA;&lt;h2&gt;R Shiny&lt;/h2&gt;&#xD;&#xA;&lt;p&gt;&lt;strong&gt;R Shiny&lt;/strong&gt; is an open-source R package that allows users to build interactive web applications directly in R without requiring extensive knowledge of web development (HTML, CSS, or JavaScript). It is widely used for &lt;strong&gt;data visualization, dashboard creation, and interactive analytics&lt;/strong&gt;. Shiny applications run in a web browser and can be hosted &lt;strong&gt;locally&lt;/strong&gt;, on &lt;strong&gt;Shiny Server&lt;/strong&gt;, or deployed to &lt;strong&gt;ShinyApps.io&lt;/strong&gt; or other cloud platforms.&#xD;&#xA;R Shiny is a game-changer for those who want to create &lt;strong&gt;interactive applications&lt;/strong&gt; and &lt;strong&gt;data-driven dashboards&lt;/strong&gt; without needing deep web development expertise. Whether you’re an analyst, researcher, or developer, Shiny provides a powerful and flexible way to bring your data to life.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>GAM &amp; PM2.5 and O3 smoke tool</title>
+      <title>GAM &amp; PM2.5 and O3 smoke tool (PMO3smokeTool)</title>
       <link>//localhost:4321/smoke-tool/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:4321/smoke-tool/</guid>
