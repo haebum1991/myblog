@@ -15,10 +15,12 @@ pre code {
 }
 </style>
 
-This tutorial is for the "PM2.5 and O3 smoke tool" app, available at ([https://westar.shinyapps.io/PMO3smokeTool/](https://westar.shinyapps.io/PMO3smokeTool/)).
+This tutorial is for the "PM2.5 and O3 smoke tool" app, available at ([https://westar.shinyapps.io/PMO3smokeTool/](https://westar.shinyapps.io/PMO3smokeTool/){target="_blank"}).
 
 The `[GAM manual]` tab is designed to provide users with comprehensive tools to manually manage data collection and loading processes for building GAMs. 
-It includes two main sub-tabs: `[Data collection]` and `[Load dataset]`.
+It includes two main sub-tabs: `[Data collection]`, `[Load dataset]`, `[GAM setup]`, and `[GAM results]`.
+Please note that `[GAM setup]` and `[GAM results]` are normally hidden unless you run `[Load datset]`.
+
 In this post, we introduce how to use `[Data collection]` sub-tab in `[GAM manual]` tab.
  
 <hr>
@@ -30,6 +32,7 @@ In this post, we introduce how to use `[Data collection]` sub-tab in `[GAM manua
 
 <hr>
 2. There are three types of datasets to collect: PM2.5 & O3 data from the EPA, and ASOS (Automated Surface Observing Systems) meteorological data from the IEM (Iowa Environmental Mesonet). 
+
 - <b>EPA sites for O3 (44210)</b>: Monitoring sites operated by the EPA that measure daily maximum 8-hour average ozone (MDA8) concentrations, categorized under parameter code 44210. 
 The data is sourced from EPA-API.
 If you want to download pre-generated file from EPA, 

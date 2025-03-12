@@ -6,14 +6,21 @@
     <description>Recent content in Posts on Leestory</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Mon, 10 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 12 Mar 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="//localhost:4321/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Smoke tool tutorial [02]: GAM manual - GAM setup</title>
+      <link>//localhost:4321/2025/smoke-tool-tutorial-02-gam-manual-gam-setup/</link>
+      <pubDate>Wed, 12 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:4321/2025/smoke-tool-tutorial-02-gam-manual-gam-setup/</guid>
+      <description>&lt;style&gt;&#xD;&#xA;pre code {&#xD;&#xA;    font-size: 14px;&#xD;&#xA;}&#xD;&#xA;&lt;/style&gt;&#xD;&#xA;&lt;p&gt;This tutorial is for the “PM2.5 and O3 smoke tool” app, available at (&lt;a href=&#34;https://westar.shinyapps.io/PMO3smokeTool/&#34; target=&#34;_blank&#34;&gt;https://westar.shinyapps.io/PMO3smokeTool/&lt;/a&gt;).&lt;/p&gt;&#xD;&#xA;&lt;p&gt;The &lt;code&gt;[GAM manual]&lt;/code&gt; tab is designed to provide users with comprehensive tools to manually manage data collection and loading processes for building GAMs.&#xD;&#xA;It includes two main sub-tabs: &lt;code&gt;[Data collection]&lt;/code&gt;, &lt;code&gt;[Load dataset]&lt;/code&gt;, &lt;code&gt;[GAM setup]&lt;/code&gt;, and &lt;code&gt;[GAM results]&lt;/code&gt;.&#xD;&#xA;Please note that &lt;code&gt;[GAM setup]&lt;/code&gt; and &lt;code&gt;[GAM results]&lt;/code&gt; are normally hidden unless you run &lt;code&gt;[Load datset]&lt;/code&gt;.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Smoke tool tutorial [01]: GAM manual - Data collection</title>
       <link>//localhost:4321/2025/smoke-tool-tutorial-01-gam-manual-data-collection/</link>
       <pubDate>Mon, 10 Mar 2025 00:00:00 +0000</pubDate>
       <guid>//localhost:4321/2025/smoke-tool-tutorial-01-gam-manual-data-collection/</guid>
-      <description>&lt;style&gt;&#xD;&#xA;pre code {&#xD;&#xA;    font-size: 14px;&#xD;&#xA;}&#xD;&#xA;&lt;/style&gt;&#xD;&#xA;&lt;p&gt;This tutorial is for the “PM2.5 and O3 smoke tool” app, available at (&lt;a href=&#34;https://westar.shinyapps.io/PMO3smokeTool/&#34;&gt;https://westar.shinyapps.io/PMO3smokeTool/&lt;/a&gt;).&lt;/p&gt;&#xD;&#xA;&lt;p&gt;The &lt;code&gt;[GAM manual]&lt;/code&gt; tab is designed to provide users with comprehensive tools to manually manage data collection and loading processes for building GAMs.&#xD;&#xA;It includes two main sub-tabs: &lt;code&gt;[Data collection]&lt;/code&gt; and &lt;code&gt;[Load dataset]&lt;/code&gt;.&#xD;&#xA;In this post, we introduce how to use &lt;code&gt;[Data collection]&lt;/code&gt; sub-tab in &lt;code&gt;[GAM manual]&lt;/code&gt; tab.&lt;/p&gt;&#xD;&#xA;&lt;hr&gt;&#xD;&#xA;&lt;ol style=&#34;list-style-type: decimal&#34;&gt;&#xD;&#xA;&lt;li&gt;Go to &lt;code&gt;[GAM manual]&lt;/code&gt; &amp;gt; &lt;code&gt;[Data collection]&lt;/code&gt; tab.&lt;/li&gt;&#xD;&#xA;&lt;/ol&gt;&#xD;&#xA;&lt;div style=&#34;text-align: center;&#34;&gt;&#xD;&#xA;&lt;p&gt;&lt;img src=&#34;01_SmokeTool_tutorial_gam_manual_data_collection.png&#34;&gt;&lt;/p&gt;</description>
+      <description>&lt;style&gt;&#xD;&#xA;pre code {&#xD;&#xA;    font-size: 14px;&#xD;&#xA;}&#xD;&#xA;&lt;/style&gt;&#xD;&#xA;&lt;p&gt;This tutorial is for the “PM2.5 and O3 smoke tool” app, available at (&lt;a href=&#34;https://westar.shinyapps.io/PMO3smokeTool/&#34; target=&#34;_blank&#34;&gt;https://westar.shinyapps.io/PMO3smokeTool/&lt;/a&gt;).&lt;/p&gt;&#xD;&#xA;&lt;p&gt;The &lt;code&gt;[GAM manual]&lt;/code&gt; tab is designed to provide users with comprehensive tools to manually manage data collection and loading processes for building GAMs.&#xD;&#xA;It includes two main sub-tabs: &lt;code&gt;[Data collection]&lt;/code&gt;, &lt;code&gt;[Load dataset]&lt;/code&gt;, &lt;code&gt;[GAM setup]&lt;/code&gt;, and &lt;code&gt;[GAM results]&lt;/code&gt;.&#xD;&#xA;Please note that &lt;code&gt;[GAM setup]&lt;/code&gt; and &lt;code&gt;[GAM results]&lt;/code&gt; are normally hidden unless you run &lt;code&gt;[Load datset]&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>R shiny [04]: Hide/Show login page</title>
