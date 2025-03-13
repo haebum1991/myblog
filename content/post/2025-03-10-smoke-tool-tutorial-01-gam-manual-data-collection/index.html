@@ -15,6 +15,13 @@ tags: []
 pre code {
     font-size: 14px;
 }
+.centered-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black;
+  width: auto;
+}
 </style>
 <p>This tutorial is for the “PM2.5 and O3 smoke tool” app, available at (<a href="https://westar.shinyapps.io/PMO3smokeTool/" target="_blank">https://westar.shinyapps.io/PMO3smokeTool/</a>).</p>
 <p>The <code>[GAM manual]</code> tab is designed to provide users with comprehensive tools to manually manage data collection and loading processes for building GAMs.
@@ -26,7 +33,7 @@ Please note that <code>[GAM setup]</code> and <code>[GAM results]</code> are nor
 <li>Go to <code>[GAM manual]</code> &gt; <code>[Data collection]</code> tab.</li>
 </ol>
 <div style="text-align: center;">
-<p><img src="01_SmokeTool_tutorial_gam_manual_data_collection.png"></p>
+<p><img src="01_SmokeTool_tutorial_gam_manual_data_collection.png" class="centered-img"></p>
 </div>
 <hr>
 <ol start="2" style="list-style-type: decimal">
@@ -45,7 +52,7 @@ please visit EPA website (<a href="https://aqs.epa.gov/aqsweb/airdata/download_f
 (<a href="https://cran.r-project.org/web/packages/riem/index.html" target="_blank">here</a>).</li>
 </ul>
 <div style="text-align: center;">
-<p><img src="02_SmokeTool_tutorial_gam_manual_data_collection.png"></p>
+<p><img src="02_SmokeTool_tutorial_gam_manual_data_collection.png" class="centered-img"></p>
 </div>
 <hr>
 <ol start="3" style="list-style-type: decimal">
@@ -54,7 +61,7 @@ If you want to find out information about a site, simply place your mouse cursor
 You can then look at detailed site information including <code>state</code>, <code>site name</code>, <code>AQS code</code>, etc.</li>
 </ol>
 <div style="text-align: center;">
-<p><img src="03_SmokeTool_tutorial_gam_manual_data_collection.png"></p>
+<p><img src="03_SmokeTool_tutorial_gam_manual_data_collection.png" class="centered-img"></p>
 </div>
 <hr>
 <ol start="4" style="list-style-type: decimal">
@@ -62,7 +69,7 @@ You can then look at detailed site information including <code>state</code>, <co
 This feature only applies to EPA AQS sites.</li>
 </ol>
 <div style="text-align: center;">
-<p><img src="04_SmokeTool_tutorial_gam_manual_data_collection.png"></p>
+<p><img src="04_SmokeTool_tutorial_gam_manual_data_collection.png" class="centered-img"></p>
 </div>
 <hr>
 <ol start="5" style="list-style-type: decimal">
@@ -71,7 +78,7 @@ When typing, you can also check the list below to see what data is available for
 And then, when you click the <code>map icon</code>, the site location will be displayed on the map.</li>
 </ol>
 <div style="text-align: center;">
-<p><img src="05_SmokeTool_tutorial_gam_manual_data_collection.png"></p>
+<p><img src="05_SmokeTool_tutorial_gam_manual_data_collection.png" class="centered-img"></p>
 </div>
 <hr>
 <ol start="6" style="list-style-type: decimal">
@@ -81,7 +88,7 @@ In the same way, PM2.5 and ASOS sites can also be added.
 Note that if you want to clear the list, click the <code>Clear list</code> button.</li>
 </ol>
 <div style="text-align: center;">
-<p><img src="06_SmokeTool_tutorial_gam_manual_data_collection.png"></p>
+<p><img src="06_SmokeTool_tutorial_gam_manual_data_collection.png" class="centered-img"></p>
 </div>
 <hr>
 <ol start="7" style="list-style-type: decimal">
@@ -91,7 +98,7 @@ You should receive an email with your EPA API key within a few minutes.
 If you want to know detailed instructions, please visit the EPA API official website (<a href="https://aqs.epa.gov/aqsweb/documents/data_api.html#signup" target="_blank">here</a>).</li>
 </ol>
 <div style="text-align: center;">
-<p><img src="07_SmokeTool_tutorial_gam_manual_data_collection.png"></p>
+<p><img src="07_SmokeTool_tutorial_gam_manual_data_collection.png" class="centered-img"></p>
 </div>
 <hr>
 <ol start="8" style="list-style-type: decimal">
@@ -102,14 +109,14 @@ Once everything is complete, click the <code>Run collection</code> button. The d
 depending on the period.</li>
 </ol>
 <div style="text-align: center;">
-<p><img src="08_SmokeTool_tutorial_gam_manual_data_collection.png"></p>
+<p><img src="08_SmokeTool_tutorial_gam_manual_data_collection.png" class="centered-img"></p>
 </div>
 <hr>
 <ol start="9" style="list-style-type: decimal">
 <li>Once data collection is complete, the collected data will be displayed in the box below (<code>O3 data</code>, <code>PM2.5 data</code>, and/or <code>ASOS data</code>). If you want to download the collected data, you just click on the <code>Save data</code> button for each data type.</li>
 </ol>
 <div style="text-align: center;">
-<p><img src="09_SmokeTool_tutorial_gam_manual_data_collection.png"></p>
+<p><img src="09_SmokeTool_tutorial_gam_manual_data_collection.png" class="centered-img"></p>
 </div>
 <hr>
 <ol start="10" style="list-style-type: decimal">
@@ -121,7 +128,7 @@ depending on the period.</li>
 <li>If O3 data are invalid or unavailable, the nearest ASOS data based on the PM2.5 measurement site will be merged.</li>
 </ul>
 <div style="text-align: center;">
-<p><img src="10_SmokeTool_tutorial_gam_manual_data_collection.png"></p>
+<p><img src="10_SmokeTool_tutorial_gam_manual_data_collection.png" class="centered-img"></p>
 </div>
 <hr>
 <ol start="11" style="list-style-type: decimal">
@@ -135,9 +142,9 @@ Then, the processed data, including the <code>HMS</code> and <code>PM2.5-criteri
 If you want to download the data, click the <code>Save data</code> button.</li>
 </ol>
 <div style="text-align: center;">
-<p><img src="11_SmokeTool_tutorial_gam_manual_data_collection.png"></p>
+<p><img src="11_SmokeTool_tutorial_gam_manual_data_collection.png" class="centered-img"></p>
 </div>
 <hr>
-<p>So far, we have introduced the process of collecting PM2.5, O3, and meteorological data from EPA and IEM based on selected sites.
+<p>So far, we have introduced the process of collecting PM2.5, O3, and meteorological data from EPA and IEM based on selected sites in the <code>[Data collection]</code> sub-tab.
 Now, you can use the collected data for further data analysis.</p>
-<p>In the next post, we will explore how to perform GAM (Generalized Additive Model) analysis using the collected data.</p>
+<p>In the next post, we will explore how to perform GAM (Generalized Additive Model) analysis using the collected data in the <code>[GAM setup]</code> sub-tab.</p>

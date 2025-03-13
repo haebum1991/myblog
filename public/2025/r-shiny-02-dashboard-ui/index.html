@@ -101,6 +101,13 @@
 pre code {
     font-size: 14px;
 }
+.centered-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black;
+  width: auto;
+}
 </style>
 <p>R shiny is a very useful and versatile tool to build your own app using R.
 This blog section will walk you through the step-by-step process of how the GAM tool app was built.
@@ -229,7 +236,7 @@ Properly setting these ensures smooth communication between the UI and the serve
 server &lt;- function(input, output, session) {}
 shiny::shinyApp(ui = ui, server = server)</code></pre>
 <div style="text-align: center;">
-<p><img src="01_Shiny_main_page.png"></p>
+<p><img src="01_Shiny_main_page.png" class="centered-img"></p>
 </div>
 <!-- # ```{r, results="asis", echo=FALSE} -->
 <!-- # cat('<iframe src="https://leestory.shinyapps.io/2025-02-05-01-r-shiny-dashboard-ui/"  -->
@@ -284,7 +291,7 @@ Next time you’ll learn how to utilize these.</p>
         </li>
         
         <li>
-            <a href="/categories/smoketool-tutorial">smoketool-tutorial</a> (3)
+            <a href="/categories/smoketool-tutorial">smoketool-tutorial</a> (4)
         </li>
         
     </ul>

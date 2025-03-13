@@ -13,6 +13,13 @@ tags: []
 pre code {
     font-size: 14px;
 }
+.centered-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black;
+  width: auto;
+}
 </style>
 
 Implementing a typical login page can be quite complex in R shiny.
@@ -85,7 +92,7 @@ and the login page UI will be displayed as follows.
 You can modify various elements to match your design. Try making some changes and experiment with different settings!)
 
 <div style="text-align: center;">
-  <img src="01_Shiny_login_page.png">
+  <img src="01_Shiny_login_page.png" class="centered-img">
 </div>
 
 <!-- # ```{r, results="asis", echo=FALSE} -->

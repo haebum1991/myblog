@@ -13,6 +13,13 @@ tags: []
 pre code {
     font-size: 14px;
 }
+.centered-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black;
+  width: auto;
+}
 </style>
 
 As explained in the previous post, creating a simulated login page in R Shiny is straightforward.
@@ -122,7 +129,7 @@ shiny::shinyApp(ui = ui, server = server)
 If you run the app in this state, both the `div(id = "login_page", ...)` and `div(id = "ui_main_page", ...)` will be displayed on the same screen simultaneously.
 
 <div style="text-align: center;">
-  <img src="01_Shiny_hide_show_login_page.png">
+  <img src="01_Shiny_hide_show_login_page.png" class="centered-img">
 </div>
 
 

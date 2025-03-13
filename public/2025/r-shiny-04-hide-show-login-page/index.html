@@ -101,6 +101,13 @@
 pre code {
     font-size: 14px;
 }
+.centered-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black;
+  width: auto;
+}
 </style>
 <p>As explained in the previous post, creating a simulated login page in R Shiny is straightforward.
 This post demonstrates how to toggle the visibility of the login page,
@@ -197,7 +204,7 @@ server &lt;- function(input, output, session) {}
 shiny::shinyApp(ui = ui, server = server)</code></pre>
 <p>If you run the app in this state, both the <code>div(id = "login_page", ...)</code> and <code>div(id = "ui_main_page", ...)</code> will be displayed on the same screen simultaneously.</p>
 <div style="text-align: center;">
-<p><img src="01_Shiny_hide_show_login_page.png"></p>
+<p><img src="01_Shiny_hide_show_login_page.png" class="centered-img"></p>
 </div>
 <p>Therefore, when the app first opens, only the <code>login_page</code> should be visible.
 To achieve this, we need to use the <code>shinyjs::hidden()</code> function.
@@ -412,7 +419,7 @@ shinyApp(ui = ui,
         </li>
         
         <li>
-            <a href="/categories/smoketool-tutorial">smoketool-tutorial</a> (3)
+            <a href="/categories/smoketool-tutorial">smoketool-tutorial</a> (4)
         </li>
         
     </ul>
