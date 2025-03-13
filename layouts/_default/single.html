@@ -3,25 +3,44 @@
 
 <div class="container">
     <main class="content">
+          {{ if not (or (eq .RelPermalink "/about/") (eq .RelPermalink "/smoke-tool/") (eq .RelPermalink "/resources/") (eq .RelPermalink "/projects/")) }}
+              {{ $currentCategories := .Params.categories }}
+              {{ $filteredPages := slice }}
 
-            {{ if not (or (eq .RelPermalink "/about/") (eq .RelPermalink "/smoke-tool/") (eq .RelPermalink "/resources/") (eq .RelPermalink "/projects/")) }}
-                <nav class="post-navigation">
-                {{ with .PrevInSection }}
-                <a class="prev-post" href="{{ .RelPermalink }}">
-                    &larr; {{ .Title }}
-                </a>
-                {{ end }}
-                {{ with .NextInSection }}
-                <a class="next-post" href="{{ .RelPermalink }}">
-                    {{ .Title }} &rarr;
-                </a>
-                {{ end }}
-                </nav>
-                <hr>
+              {{ range where .Site.RegularPages "Params.categories" "intersect" $currentCategories }}
+                  {{ $filteredPages = $filteredPages | append . }}
+              {{ end }}
+
+              {{ $filteredPages = sort $filteredPages "Date" "desc" }}
+
+              {{ $currentIndex := -1 }}
+              {{ range $index, $page := $filteredPages }}
+                  {{ if eq $page.RelPermalink $.RelPermalink }}
+                      {{ $currentIndex = $index }}
+                  {{ end }}
+              {{ end }}
+
+              {{ if ne $currentIndex -1 }}
+                  <nav class="post-navigation">
+                      {{ if lt $currentIndex (sub (len $filteredPages) 1) }}
+                          {{ $nextPost := index $filteredPages (add $currentIndex 1) }}
+                          <a class="prev-post" href="{{ $nextPost.RelPermalink }}">
+                              &larr; {{ $nextPost.Title }}
+                          </a>
+                      {{ end }}
+
+                      {{ if gt $currentIndex 0 }}
+                          {{ $prevPost := index $filteredPages (sub $currentIndex 1) }}
+                          <a class="next-post" href="{{ $prevPost.RelPermalink }}">
+                              {{ $prevPost.Title }} &rarr;
+                          </a>
+                      {{ end }}
+                  </nav>
+                  <hr>
             {{ end }}
+        {{ end }}
     
         <article class="article">
-        
             {{ if or (eq .Section "post") }}
             <span class="article-duration">{{ .ReadingTime }} min read</span>
             {{ end }}
@@ -38,7 +57,6 @@
                 {{ end }}
                 {{ .Content }}
             </div>
-            
         </article>
 
         {{ partial "disqus.html" .}}

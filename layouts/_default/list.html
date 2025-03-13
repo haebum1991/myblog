@@ -5,7 +5,13 @@
     <main class="content">
         <article class="article">
         
-            <h1 class="article-title">Archive</h1>
+            <h1 class="article-title">
+                {{ if eq .Type "categories" }}
+                    {{ .Title }}
+                {{ else }}
+                    Archive
+                {{ end }}
+            </h1>
             <hr>
 
             {{ if .Content }}
