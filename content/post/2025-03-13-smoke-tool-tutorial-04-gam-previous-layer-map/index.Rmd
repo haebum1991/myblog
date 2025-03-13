@@ -63,7 +63,6 @@ This functionality helps users assess the performance of various GAM models and 
     - `Mark options`: Special markers for smoke events and statistical thresholds.
 - `Pane (4)`: Provides a button to download the displayed dataset for further use.
   - Provides an `Export data` button, allowing users to download the displayed dataset.
-  - Useful for further analysis in **R, Python, or Excel**.
 - `Pane (5)`: Parameter descriptions.
   - Lists detailed explanations of each variable used in the visualization. 
   - This descriptions vary depending on the dataset provided in Pane (2).
