@@ -33,15 +33,15 @@ In this post, we introduce how to use `[Data collection]` sub-tab in `[GAM manua
 <hr>
 2. There are three types of datasets to collect: PM2.5 & O3 data from the EPA, and ASOS (Automated Surface Observing Systems) meteorological data from the IEM (Iowa Environmental Mesonet). 
 
-- <b>EPA sites for O3 (44210)</b>: Monitoring sites operated by the EPA that measure daily maximum 8-hour average ozone (MDA8) concentrations, categorized under parameter code 44210. 
+- `EPA sites for O3 (44210)`: Monitoring sites operated by the EPA that measure daily maximum 8-hour average ozone (MDA8) concentrations, categorized under parameter code 44210. 
 The data is sourced from EPA-API.
 If you want to download pre-generated file from EPA, 
 please visit EPA website ([here](https://aqs.epa.gov/aqsweb/airdata/download_files.html){target="_blank"})
-- <b>EPA sites for PM (88101, 88502)</b>: Monitoring sites managed by the EPA that measure particulate matter (PM2.5) concentrations, using parameter codes 88101 (FRM/FEM) and 88502 (non-FRM/FEM). 
+- `EPA sites for PM (88101, 88502)`: Monitoring sites managed by the EPA that measure particulate matter (PM2.5) concentrations, using parameter codes 88101 (FRM/FEM) and 88502 (non-FRM/FEM). 
 The data is sourced from EPA-API.
 If you want to download pre-generated file from EPA, 
 please visit EPA website ([here](https://aqs.epa.gov/aqsweb/airdata/download_files.html){target="_blank"})
-- <b>IEM sites for ASOS</b>: ASOS stations managed by the Iowa Environmental Mesonet (IEM), providing real-time meteorological data such as temperature, humidity, and wind speed. In addition, the data can be obtained using "riem" package in R
+- `IEM sites for ASOS`: ASOS stations managed by the Iowa Environmental Mesonet (IEM), providing real-time meteorological data such as temperature, humidity, and wind speed. In addition, the data can be obtained using "riem" package in R
 ([here](https://cran.r-project.org/web/packages/riem/index.html){target="_blank"}).
 
 <div style="text-align: center;">

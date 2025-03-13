@@ -6,8 +6,15 @@
     <description>Recent content in SmokeTool-Tutorial on Leestory</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Wed, 12 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 13 Mar 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="//localhost:4321/categories/smoketool-tutorial/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Smoke tool tutorial [03]: GAM previous - Overview</title>
+      <link>//localhost:4321/2025/smoke-tool-tutorial-03-gam-previous-overview/</link>
+      <pubDate>Thu, 13 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:4321/2025/smoke-tool-tutorial-03-gam-previous-overview/</guid>
+      <description>&lt;style&gt;&#xD;&#xA;pre code {&#xD;&#xA;    font-size: 14px;&#xD;&#xA;}&#xD;&#xA;&lt;/style&gt;&#xD;&#xA;&lt;p&gt;This tutorial is for the “PM2.5 and O3 smoke tool” app, available at (&lt;a href=&#34;https://westar.shinyapps.io/PMO3smokeTool/&#34; target=&#34;_blank&#34;&gt;https://westar.shinyapps.io/PMO3smokeTool/&lt;/a&gt;).&lt;/p&gt;&#xD;&#xA;&lt;p&gt;The &lt;code&gt;[GAM previous]&lt;/code&gt; tab allows users to explore and understand previously developed GAMs for O3 prediction and related air quality analyses. It includes two main sub-tabs: &lt;code&gt;[Overview]&lt;/code&gt; and &lt;code&gt;[Layer map]&lt;/code&gt;.&#xD;&#xA;Additionally, users can compare not only our GAM results but also findings from other studies on smoke contributions to O3 and PM2.5, derived using different methods.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Smoke tool tutorial [02]: GAM manual - GAM setup</title>
       <link>//localhost:4321/2025/smoke-tool-tutorial-02-gam-manual-gam-setup/</link>
