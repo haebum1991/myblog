@@ -214,7 +214,7 @@ document.addEventListener("DOMContentLoaded", function () {
 <b>Generalized Additive Model (GAM)</b> for predicting MDA8 O3 using meteorological data under both smoke and non-smoke conditions.
 In this app, a GAM is derived using the "mgcv" package in R. We hope this tool will be useful for state agencies and others 
 in understanding the factors that control O3 production.</p>
-<img src="/images/rsGAM_page_sample.png" alt="R shiny">
+<img src="/images/rsGAM_page_sample.png" alt="R shiny" class="centered-img" onclick="openModal(this.src)">
 <div style="text-align: center;">
   Example page in the Smoke tool app
 </div>
@@ -257,6 +257,10 @@ Please send any feedback or bug reports to: <b>Dan Jaffe</b>
   <li>Gong, X., et al.: Quantifying O3 Impacts in Urban Areas Due to Wildfires Using a Generalized Additive Model, Environ. Sci. Technol., 51, 13216–13223, 2017.
   <a href="https://doi.org/10.1021/acs.est.7b03130" target="_blank">https://doi.org/10.1021/acs.est.7b03130</a></li>
 </ul>
+<div id="imgModal" class="modal" onclick="closeModal(event)">
+  <span class="close" onclick="closeModal(event)">&times;</span>
+  <img class="modal-content" id="modalImg" onclick="toggleZoom(event)">
+</div>
 
             </div>
         </article>
