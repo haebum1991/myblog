@@ -15,7 +15,9 @@ title: "GAM & PM2.5 and O3 smoke tool (PMO3smokeTool)"
 In this app, a GAM is derived using the "mgcv" package in R. We hope this tool will be useful for state agencies and others 
 in understanding the factors that control O3 production.</p>
 
-<img src="/images/rsGAM_page_sample.png" alt="R shiny" class="centered-img" onclick="openModal(this.src)">
+<div style="text-align: center;">
+  <img src="/images/rsGAM_page_sample.png" alt="R shiny" class="centered-img" onclick="openModal(this.src)">
+</div>
 
 <div style="text-align: center;">
   Example page in the Smoke tool app
