@@ -30,6 +30,93 @@
 <link rel="stylesheet" href="/css/my_main.css" media="all">
 
 
+<style>
+.centered-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black;
+  width: auto;
+  max-width: 100%;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  overflow: auto;
+  animation: fadeIn 0.4s ease;
+}
+
+.modal-content {
+  position: relative;
+  display: block;
+  margin: auto;
+  max-width: 90vw;
+  max-height: 90vh;
+  width: auto;
+  height: auto;
+  cursor: zoom-in;
+  transition: transform 0.3s ease;
+}
+
+.modal-content.zoomed {
+  transform: scale(1.5);
+  transform-origin: top;
+  cursor: zoom-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.7); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.close {
+  position: absolute;
+  top: 30px;
+  right: 45px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 10000;
+}
+</style>
+
+<script>
+function openModal(src) {
+  const modal = document.getElementById("imgModal");
+  const modalImg = document.getElementById("modalImg");
+  modalImg.classList.remove("zoomed");
+  modal.style.display = "block";
+  modalImg.src = src;
+}
+
+function closeModal(event) {
+  if (event.target.id === "imgModal" || event.target.className === "close") {
+    document.getElementById("imgModal").style.display = "none";
+  }
+}
+
+function toggleZoom(event) {
+  const modalImg = document.getElementById("modalImg");
+  modalImg.classList.toggle("zoomed");
+}
+</script>
+
+
 
   </head>
   <body>
@@ -127,13 +214,6 @@
 pre code {
     font-size: 14px;
 }
-.centered-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border: 1px solid black;
-  width: auto;
-}
 </style>
 <p>As explained in the previous post, creating a simulated login page in R Shiny is straightforward.
 This post demonstrates how to toggle the visibility of the login page,
@@ -230,7 +310,7 @@ server &lt;- function(input, output, session) {}
 shiny::shinyApp(ui = ui, server = server)</code></pre>
 <p>If you run the app in this state, both the <code>div(id = "login_page", ...)</code> and <code>div(id = "ui_main_page", ...)</code> will be displayed on the same screen simultaneously.</p>
 <div style="text-align: center;">
-<p><img src="01_Shiny_hide_show_login_page.png" class="centered-img"></p>
+<p><img src="01_Shiny_hide_show_login_page.png" class="centered-img" onclick="openModal(this.src)"></p>
 </div>
 <p>Therefore, when the app first opens, only the <code>login_page</code> should be visible.
 To achieve this, we need to use the <code>shinyjs::hidden()</code> function.
@@ -402,6 +482,10 @@ shinyApp(ui = ui,
 <p>By testing the final output below, you can verify that clicking the [Go to App] button on the <code>login_page</code> and the [Logout] button on the <code>ui_main_page</code> successfully triggers the screen transition.</p>
 <iframe src="https://leestory.shinyapps.io/2025-02-10-03-r-shiny-hide-show-login-page/" width="100%" height="600px" style="border:none;">
 </iframe>
+<div id="imgModal" class="modal" onclick="closeModal(event)">
+<p><span class="close" onclick="closeModal(event)">×</span>
+<img class="modal-content" id="modalImg" onclick="toggleZoom(event)"></p>
+</div>
 
             </div>
         </article>

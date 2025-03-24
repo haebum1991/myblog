@@ -13,13 +13,6 @@ tags: []
 pre code {
     font-size: 14px;
 }
-.centered-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border: 1px solid black;
-  width: auto;
-}
 </style>
 
 As explained in the previous post, creating a simulated login page in R Shiny is straightforward.
@@ -129,7 +122,7 @@ shiny::shinyApp(ui = ui, server = server)
 If you run the app in this state, both the `div(id = "login_page", ...)` and `div(id = "ui_main_page", ...)` will be displayed on the same screen simultaneously.
 
 <div style="text-align: center;">
-  <img src="01_Shiny_hide_show_login_page.png" class="centered-img">
+  <img src="01_Shiny_hide_show_login_page.png" class="centered-img" onclick="openModal(this.src)">
 </div>
 
 
@@ -331,3 +324,8 @@ By testing the final output below, you can verify that clicking the [Go to App] 
 cat('<iframe src="https://leestory.shinyapps.io/2025-02-10-03-r-shiny-hide-show-login-page/"
      width="100%" height="600px" style="border:none;"></iframe>')
 ```
+
+<div id="imgModal" class="modal" onclick="closeModal(event)">
+  <span class="close" onclick="closeModal(event)">&times;</span>
+  <img class="modal-content" id="modalImg" onclick="toggleZoom(event)">
+</div>

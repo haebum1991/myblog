@@ -30,6 +30,93 @@
 <link rel="stylesheet" href="/css/my_main.css" media="all">
 
 
+<style>
+.centered-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black;
+  width: auto;
+  max-width: 100%;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  overflow: auto;
+  animation: fadeIn 0.4s ease;
+}
+
+.modal-content {
+  position: relative;
+  display: block;
+  margin: auto;
+  max-width: 90vw;
+  max-height: 90vh;
+  width: auto;
+  height: auto;
+  cursor: zoom-in;
+  transition: transform 0.3s ease;
+}
+
+.modal-content.zoomed {
+  transform: scale(1.5);
+  transform-origin: top;
+  cursor: zoom-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.7); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.close {
+  position: absolute;
+  top: 30px;
+  right: 45px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 10000;
+}
+</style>
+
+<script>
+function openModal(src) {
+  const modal = document.getElementById("imgModal");
+  const modalImg = document.getElementById("modalImg");
+  modalImg.classList.remove("zoomed");
+  modal.style.display = "block";
+  modalImg.src = src;
+}
+
+function closeModal(event) {
+  if (event.target.id === "imgModal" || event.target.className === "close") {
+    document.getElementById("imgModal").style.display = "none";
+  }
+}
+
+function toggleZoom(event) {
+  const modalImg = document.getElementById("modalImg");
+  modalImg.classList.toggle("zoomed");
+}
+</script>
+
+
 
   </head>
   <body>
@@ -131,13 +218,6 @@
 <style>
 pre code {
     font-size: 14px;
-}
-.centered-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border: 1px solid black;
-  width: auto;
 }
 </style>
 <p>R shiny is a very useful and versatile tool to build your own app using R.
@@ -267,7 +347,7 @@ Properly setting these ensures smooth communication between the UI and the serve
 server &lt;- function(input, output, session) {}
 shiny::shinyApp(ui = ui, server = server)</code></pre>
 <div style="text-align: center;">
-<p><img src="01_Shiny_main_page.png" class="centered-img"></p>
+<p><img src="01_Shiny_main_page.png" class="centered-img" onclick="openModal(this.src)"></p>
 </div>
 <!-- # ```{r, results="asis", echo=FALSE} -->
 <!-- # cat('<iframe src="https://leestory.shinyapps.io/2025-02-05-01-r-shiny-dashboard-ui/"  -->
@@ -279,6 +359,10 @@ allowing for future dynamic UI manipulations.
 making it possible to show/hide elements, disable buttons, and apply dynamic styling.
 In other words, it is used for managing login/logout or hide/show functionality and other interactive UI changes.
 Next time you’ll learn how to utilize these.</p>
+<div id="imgModal" class="modal" onclick="closeModal(event)">
+<p><span class="close" onclick="closeModal(event)">×</span>
+<img class="modal-content" id="modalImg" onclick="toggleZoom(event)"></p>
+</div>
 
             </div>
         </article>

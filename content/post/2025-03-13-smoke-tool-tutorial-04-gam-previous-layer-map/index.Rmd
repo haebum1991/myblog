@@ -13,13 +13,6 @@ tags: []
 pre code {
     font-size: 14px;
 }
-.centered-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border: 1px solid black;
-  width: auto;
-}
 </style>
 
 This tutorial is for the "PM2.5 and O3 smoke tool" app, available at ([https://westar.shinyapps.io/PMO3smokeTool/](https://westar.shinyapps.io/PMO3smokeTool/){target="_blank"}).
@@ -36,7 +29,7 @@ This functionality helps users assess the performance of various GAM models and 
 1. Go to `[GAM previous]` > `[Layer map]` tab.
 
 <div style="text-align: center;">
-  <img src="01_SmokeTool_tutorial_gam_previous_layer_map.png" class="centered-img">
+  <img src="01_SmokeTool_tutorial_gam_previous_layer_map.png" class="centered-img" onclick="openModal(this.src)">
 </div>
 
 <hr>
@@ -68,7 +61,7 @@ This functionality helps users assess the performance of various GAM models and 
   - This descriptions vary depending on the dataset provided in Pane (2).
 
 <div style="text-align: center;">
-  <img src="02_SmokeTool_tutorial_gam_previous_layer_map.png" class="centered-img">
+  <img src="02_SmokeTool_tutorial_gam_previous_layer_map.png" class="centered-img" onclick="openModal(this.src)">
 </div>
 
 <hr>
@@ -87,7 +80,7 @@ click the `Export data` button (blue rectangle).
 For explanations of each parameter, refer to `Parameter descriptions` (green rectangle).
 
 <div style="text-align: center;">
-  <img src="03_SmokeTool_tutorial_gam_previous_layer_map.png" class="centered-img">
+  <img src="03_SmokeTool_tutorial_gam_previous_layer_map.png" class="centered-img" onclick="openModal(this.src)">
 </div>
 
 <hr>
@@ -103,19 +96,19 @@ Since values are calculated by AQS site.
 All plots have a download feature. If you want to download, click the `download icon` in the upper right corner in each plot.
 
 <div style="text-align: center;">
-  <img src="04_1_SmokeTool_tutorial_gam_previous_layer_map.png" class="centered-img">
+  <img src="04_1_SmokeTool_tutorial_gam_previous_layer_map.png" class="centered-img" onclick="openModal(this.src)">
 </div>
 
 <div style="text-align: center;">
-  <img src="04_2_SmokeTool_tutorial_gam_previous_layer_map.png" class="centered-img">
+  <img src="04_2_SmokeTool_tutorial_gam_previous_layer_map.png" class="centered-img" onclick="openModal(this.src)">
 </div>
 
 <div style="text-align: center;">
-  <img src="04_3_SmokeTool_tutorial_gam_previous_layer_map.png" class="centered-img">
+  <img src="04_3_SmokeTool_tutorial_gam_previous_layer_map.png" class="centered-img" onclick="openModal(this.src)">
 </div>
 
 <div style="text-align: center;">
-  <img src="04_4_SmokeTool_tutorial_gam_previous_layer_map.png" class="centered-img">
+  <img src="04_4_SmokeTool_tutorial_gam_previous_layer_map.png" class="centered-img" onclick="openModal(this.src)">
 </div>
 
 <hr>
@@ -123,7 +116,7 @@ All plots have a download feature. If you want to download, click the `download 
 Additionally, changing the dataset or date allows for immediate result comparison.
 
 <div style="text-align: center;">
-  <img src="05_SmokeTool_tutorial_gam_previous_layer_map.png" class="centered-img">
+  <img src="05_SmokeTool_tutorial_gam_previous_layer_map.png" class="centered-img" onclick="openModal(this.src)">
 </div>
 
 
@@ -133,3 +126,8 @@ In the `[Layer Map]` sub-tab, users can load data for analysis and customize vis
 This functionality enables users to assess the performance of various GAM models and compare different approaches to understanding air quality dynamics, particularly in the context of wildfires.
 
 All the tutorials are complete. Now explore our app!
+
+<div id="imgModal" class="modal" onclick="closeModal(event)">
+  <span class="close" onclick="closeModal(event)">&times;</span>
+  <img class="modal-content" id="modalImg" onclick="toggleZoom(event)">
+</div>

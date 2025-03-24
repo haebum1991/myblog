@@ -13,13 +13,6 @@ tags: []
 pre code {
     font-size: 14px;
 }
-.centered-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border: 1px solid black;
-  width: auto;
-}
 </style>
 
 This tutorial is for the "PM2.5 and O3 smoke tool" app, available at ([https://westar.shinyapps.io/PMO3smokeTool/](https://westar.shinyapps.io/PMO3smokeTool/){target="_blank"}).
@@ -36,7 +29,7 @@ and examine time-series and scatter plots of observed versus predicted values fo
 1. Go to `[GAM previous]` > `[Overview]` tab.
 
 <div style="text-align: center;">
-  <img src="01_SmokeTool_tutorial_gam_previous_overview.png" class="centered-img">
+  <img src="01_SmokeTool_tutorial_gam_previous_overview.png" class="centered-img" onclick="openModal(this.src)">
 </div>
 
 <hr>
@@ -60,7 +53,7 @@ If you want to find out information about a site, simply place your mouse cursor
 You can then look at detailed site information including `state`, `site name`, `AQS code`, etc. 
 
 <div style="text-align: center;">
-  <img src="02_SmokeTool_tutorial_gam_previous_overview.png" class="centered-img">
+  <img src="02_SmokeTool_tutorial_gam_previous_overview.png" class="centered-img" onclick="openModal(this.src)">
 </div>
 
 <hr>
@@ -70,7 +63,7 @@ When typing, you can also check the list below to see what data is available for
 And then, when you click the `map icon`, the site location will be displayed on the map.
 
 <div style="text-align: center;">
-  <img src="03_SmokeTool_tutorial_gam_previous_overview.png" class="centered-img">
+  <img src="03_SmokeTool_tutorial_gam_previous_overview.png" class="centered-img" onclick="openModal(this.src)">
 </div>
 
 <hr>
@@ -82,7 +75,7 @@ Note that if you want to remove a site from the list,
 click the `trash bin icon`.
 
 <div style="text-align: center;">
-  <img src="04_SmokeTool_tutorial_gam_previous_overview.png" class="centered-img">
+  <img src="04_SmokeTool_tutorial_gam_previous_overview.png" class="centered-img" onclick="openModal(this.src)">
 </div>
 
 <hr>
@@ -100,19 +93,19 @@ All plots have a download feature.
 If you want to download, click the `download icon` in the upper right corner in each plot.
 
 <div style="text-align: center;">
-  <img src="05_1_SmokeTool_tutorial_gam_previous_overview.png" class="centered-img">
+  <img src="05_1_SmokeTool_tutorial_gam_previous_overview.png" class="centered-img" onclick="openModal(this.src)">
 </div>
 
 <div style="text-align: center;">
-  <img src="05_2_SmokeTool_tutorial_gam_previous_overview.png" class="centered-img">
+  <img src="05_2_SmokeTool_tutorial_gam_previous_overview.png" class="centered-img" onclick="openModal(this.src)">
 </div>
 
 <div style="text-align: center;">
-  <img src="05_3_SmokeTool_tutorial_gam_previous_overview.png" class="centered-img">
+  <img src="05_3_SmokeTool_tutorial_gam_previous_overview.png" class="centered-img" onclick="openModal(this.src)">
 </div>
 
 <div style="text-align: center;">
-  <img src="05_4_SmokeTool_tutorial_gam_previous_overview.png" class="centered-img">
+  <img src="05_4_SmokeTool_tutorial_gam_previous_overview.png" class="centered-img" onclick="openModal(this.src)">
 </div>
 
 <hr>
@@ -126,7 +119,7 @@ Once the setting is complete, click the `Load data` button (blue rectangular).
 Or if you want to clear all site list, click the `Clear list` button (green rectangular).
 
 <div style="text-align: center;">
-  <img src="06_SmokeTool_tutorial_gam_previous_overview.png" class="centered-img">
+  <img src="06_SmokeTool_tutorial_gam_previous_overview.png" class="centered-img" onclick="openModal(this.src)">
 </div>
 
 <hr>
@@ -134,7 +127,7 @@ Or if you want to clear all site list, click the `Clear list` button (green rect
 If you want to download the loaded data, you just click on the `Save data` button for each data section.
 
 <div style="text-align: center;">
-  <img src="07_SmokeTool_tutorial_gam_previous_overview.png" class="centered-img">
+  <img src="07_SmokeTool_tutorial_gam_previous_overview.png" class="centered-img" onclick="openModal(this.src)">
 </div>
 
 <hr>
@@ -142,3 +135,8 @@ So far, we have introduced how to explore AQS sites in relation to previously de
 The `[Overview]` sub-tab allows users to compare different model outputs, and examine time-series and scatter plots of observed versus predicted values for selected sites.
 
 In the next post, we will take a look at the `[Layer map]` sub-tab.
+
+<div id="imgModal" class="modal" onclick="closeModal(event)">
+  <span class="close" onclick="closeModal(event)">&times;</span>
+  <img class="modal-content" id="modalImg" onclick="toggleZoom(event)">
+</div>

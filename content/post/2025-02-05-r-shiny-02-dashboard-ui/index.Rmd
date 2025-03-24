@@ -13,13 +13,6 @@ tags: []
 pre code {
     font-size: 14px;
 }
-.centered-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border: 1px solid black;
-  width: auto;
-}
 </style>
 
 R shiny is a very useful and versatile tool to build your own app using R.
@@ -174,7 +167,7 @@ shiny::shinyApp(ui = ui, server = server)
 ```
 
 <div style="text-align: center;">
-  <img src="01_Shiny_main_page.png" class="centered-img">
+  <img src="01_Shiny_main_page.png" class="centered-img" onclick="openModal(this.src)">
 </div>
 
 <!-- # ```{r, results="asis", echo=FALSE} -->
@@ -188,3 +181,8 @@ allowing for future dynamic UI manipulations.
 making it possible to show/hide elements, disable buttons, and apply dynamic styling.
 In other words, it is used for managing login/logout or hide/show functionality and other interactive UI changes.
 Next time you'll learn how to utilize these.
+
+<div id="imgModal" class="modal" onclick="closeModal(event)">
+  <span class="close" onclick="closeModal(event)">&times;</span>
+  <img class="modal-content" id="modalImg" onclick="toggleZoom(event)">
+</div>

@@ -25,6 +25,93 @@
 <link rel="stylesheet" href="/css/my_main.css" media="all">
 
 
+<style>
+.centered-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black;
+  width: auto;
+  max-width: 100%;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  overflow: auto;
+  animation: fadeIn 0.4s ease;
+}
+
+.modal-content {
+  position: relative;
+  display: block;
+  margin: auto;
+  max-width: 90vw;
+  max-height: 90vh;
+  width: auto;
+  height: auto;
+  cursor: zoom-in;
+  transition: transform 0.3s ease;
+}
+
+.modal-content.zoomed {
+  transform: scale(1.5);
+  transform-origin: top;
+  cursor: zoom-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.7); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.close {
+  position: absolute;
+  top: 30px;
+  right: 45px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 10000;
+}
+</style>
+
+<script>
+function openModal(src) {
+  const modal = document.getElementById("imgModal");
+  const modalImg = document.getElementById("modalImg");
+  modalImg.classList.remove("zoomed");
+  modal.style.display = "block";
+  modalImg.src = src;
+}
+
+function closeModal(event) {
+  if (event.target.id === "imgModal" || event.target.className === "close") {
+    document.getElementById("imgModal").style.display = "none";
+  }
+}
+
+function toggleZoom(event) {
+  const modalImg = document.getElementById("modalImg");
+  modalImg.classList.toggle("zoomed");
+}
+</script>
+
+
 
   </head>
   <body>
@@ -127,13 +214,6 @@
 pre code {
     font-size: 14px;
 }
-.centered-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border: 1px solid black;
-  width: auto;
-}
 </style>
 <p>This tutorial is for the “PM2.5 and O3 smoke tool” app, available at (<a href="https://westar.shinyapps.io/PMO3smokeTool/" target="_blank">https://westar.shinyapps.io/PMO3smokeTool/</a>).</p>
 <p>The <code>[GAM previous]</code> tab allows users to explore and understand previously developed GAMs for O3 prediction and related air quality analyses. It includes two main sub-tabs: <code>[Overview]</code> and <code>[Layer map]</code>.
@@ -146,7 +226,7 @@ and examine time-series and scatter plots of observed versus predicted values fo
 <li>Go to <code>[GAM previous]</code> &gt; <code>[Overview]</code> tab.</li>
 </ol>
 <div style="text-align: center;">
-<p><img src="01_SmokeTool_tutorial_gam_previous_overview.png" class="centered-img"></p>
+<p><img src="01_SmokeTool_tutorial_gam_previous_overview.png" class="centered-img" onclick="openModal(this.src)"></p>
 </div>
 <hr>
 <ol start="2" style="list-style-type: decimal">
@@ -169,7 +249,7 @@ once you select (checkbox) the desired dataset, available sites will be displaye
 If you want to find out information about a site, simply place your mouse cursor over the site.
 You can then look at detailed site information including <code>state</code>, <code>site name</code>, <code>AQS code</code>, etc.</p>
 <div style="text-align: center;">
-<p><img src="02_SmokeTool_tutorial_gam_previous_overview.png" class="centered-img"></p>
+<p><img src="02_SmokeTool_tutorial_gam_previous_overview.png" class="centered-img" onclick="openModal(this.src)"></p>
 </div>
 <hr>
 <ol start="3" style="list-style-type: decimal">
@@ -179,7 +259,7 @@ When typing, you can also check the list below to see what data is available for
 And then, when you click the <code>map icon</code>, the site location will be displayed on the map.</li>
 </ol>
 <div style="text-align: center;">
-<p><img src="03_SmokeTool_tutorial_gam_previous_overview.png" class="centered-img"></p>
+<p><img src="03_SmokeTool_tutorial_gam_previous_overview.png" class="centered-img" onclick="openModal(this.src)"></p>
 </div>
 <hr>
 <ol start="4" style="list-style-type: decimal">
@@ -191,7 +271,7 @@ Note that if you want to remove a site from the list,
 click the <code>trash bin icon</code>.</li>
 </ol>
 <div style="text-align: center;">
-<p><img src="04_SmokeTool_tutorial_gam_previous_overview.png" class="centered-img"></p>
+<p><img src="04_SmokeTool_tutorial_gam_previous_overview.png" class="centered-img" onclick="openModal(this.src)"></p>
 </div>
 <hr>
 <ol start="5" style="list-style-type: decimal">
@@ -210,16 +290,16 @@ and annual days with &gt; 9 ug m-3 for the <code>Smoke PM2.5</code> data.</li>
 <p>All plots have a download feature.
 If you want to download, click the <code>download icon</code> in the upper right corner in each plot.</p>
 <div style="text-align: center;">
-<p><img src="05_1_SmokeTool_tutorial_gam_previous_overview.png" class="centered-img"></p>
+<p><img src="05_1_SmokeTool_tutorial_gam_previous_overview.png" class="centered-img" onclick="openModal(this.src)"></p>
 </div>
 <div style="text-align: center;">
-<p><img src="05_2_SmokeTool_tutorial_gam_previous_overview.png" class="centered-img"></p>
+<p><img src="05_2_SmokeTool_tutorial_gam_previous_overview.png" class="centered-img" onclick="openModal(this.src)"></p>
 </div>
 <div style="text-align: center;">
-<p><img src="05_3_SmokeTool_tutorial_gam_previous_overview.png" class="centered-img"></p>
+<p><img src="05_3_SmokeTool_tutorial_gam_previous_overview.png" class="centered-img" onclick="openModal(this.src)"></p>
 </div>
 <div style="text-align: center;">
-<p><img src="05_4_SmokeTool_tutorial_gam_previous_overview.png" class="centered-img"></p>
+<p><img src="05_4_SmokeTool_tutorial_gam_previous_overview.png" class="centered-img" onclick="openModal(this.src)"></p>
 </div>
 <hr>
 <ol start="6" style="list-style-type: decimal">
@@ -233,7 +313,7 @@ Once the setting is complete, click the <code>Load data</code> button (blue rect
 Or if you want to clear all site list, click the <code>Clear list</code> button (green rectangular).</li>
 </ol>
 <div style="text-align: center;">
-<p><img src="06_SmokeTool_tutorial_gam_previous_overview.png" class="centered-img"></p>
+<p><img src="06_SmokeTool_tutorial_gam_previous_overview.png" class="centered-img" onclick="openModal(this.src)"></p>
 </div>
 <hr>
 <ol start="7" style="list-style-type: decimal">
@@ -241,12 +321,16 @@ Or if you want to clear all site list, click the <code>Clear list</code> button 
 If you want to download the loaded data, you just click on the <code>Save data</code> button for each data section.</li>
 </ol>
 <div style="text-align: center;">
-<p><img src="07_SmokeTool_tutorial_gam_previous_overview.png" class="centered-img"></p>
+<p><img src="07_SmokeTool_tutorial_gam_previous_overview.png" class="centered-img" onclick="openModal(this.src)"></p>
 </div>
 <hr>
 <p>So far, we have introduced how to explore AQS sites in relation to previously developed GAMs for O3 prediction and related air quality analyses.
 The <code>[Overview]</code> sub-tab allows users to compare different model outputs, and examine time-series and scatter plots of observed versus predicted values for selected sites.</p>
 <p>In the next post, we will take a look at the <code>[Layer map]</code> sub-tab.</p>
+<div id="imgModal" class="modal" onclick="closeModal(event)">
+<p><span class="close" onclick="closeModal(event)">×</span>
+<img class="modal-content" id="modalImg" onclick="toggleZoom(event)"></p>
+</div>
 
             </div>
         </article>

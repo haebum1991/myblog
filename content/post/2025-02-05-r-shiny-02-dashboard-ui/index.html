@@ -15,13 +15,6 @@ tags: []
 pre code {
     font-size: 14px;
 }
-.centered-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border: 1px solid black;
-  width: auto;
-}
 </style>
 <p>R shiny is a very useful and versatile tool to build your own app using R.
 This blog section will walk you through the step-by-step process of how the GAM tool app was built.
@@ -150,7 +143,7 @@ Properly setting these ensures smooth communication between the UI and the serve
 server &lt;- function(input, output, session) {}
 shiny::shinyApp(ui = ui, server = server)</code></pre>
 <div style="text-align: center;">
-<p><img src="01_Shiny_main_page.png" class="centered-img"></p>
+<p><img src="01_Shiny_main_page.png" class="centered-img" onclick="openModal(this.src)"></p>
 </div>
 <!-- # ```{r, results="asis", echo=FALSE} -->
 <!-- # cat('<iframe src="https://leestory.shinyapps.io/2025-02-05-01-r-shiny-dashboard-ui/"  -->
@@ -162,3 +155,7 @@ allowing for future dynamic UI manipulations.
 making it possible to show/hide elements, disable buttons, and apply dynamic styling.
 In other words, it is used for managing login/logout or hide/show functionality and other interactive UI changes.
 Next time you’ll learn how to utilize these.</p>
+<div id="imgModal" class="modal" onclick="closeModal(event)">
+<p><span class="close" onclick="closeModal(event)">×</span>
+<img class="modal-content" id="modalImg" onclick="toggleZoom(event)"></p>
+</div>

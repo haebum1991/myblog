@@ -15,13 +15,6 @@ tags: []
 pre code {
     font-size: 14px;
 }
-.centered-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border: 1px solid black;
-  width: auto;
-}
 </style>
 <div id="r-shiny" class="section level2">
 <h2>R Shiny</h2>
@@ -50,7 +43,7 @@ library(shiny)</code></pre>
 <p>Please go to the <code>File</code> -&gt; <code>New file</code> -&gt; <code>Shiny Web App...</code> in R studio, then, you can see the below window.
 Type the <code>Application name</code> and setup the directory, and please click the <code>Create</code> button.</p>
 <div style="text-align: center;">
-<p><img src="01_Shiny_web_app.png" class="centered-img"></p>
+<p><img src="01_Shiny_web_app.png" class="centered-img" onclick="openModal(this.src)"></p>
 </div>
 <p>When finishing above step, an example file will be opened in R studio as follows:</p>
 <pre class="r"><code>library(shiny)
@@ -102,13 +95,13 @@ shinyApp(ui = ui, server = server)</code></pre>
 <p>Please follow the steps below figures.
 First, click the <code>Run App</code> button and the app will appear on the localhost page.</p>
 <div style="text-align: center;">
-<p><img src="02_1_Shiny_web_app.png" class="centered-img"></p>
+<p><img src="02_1_Shiny_web_app.png" class="centered-img" onclick="openModal(this.src)"></p>
 </div>
 <p>This stage does not mean the application has been officially deployed yet. It is merely running on your local computer.
 Therefore, you can use this as a kind of ‘preview’ to see how it looks before deploying.
 Anyway, after clicking the <code>Run App</code> button, you may see the result as given below.</p>
 <div style="text-align: center;">
-<p><img src="02_2_Shiny_web_app.png" class="centered-img"></p>
+<p><img src="02_2_Shiny_web_app.png" class="centered-img" onclick="openModal(this.src)"></p>
 </div>
 <hr>
 </div>
@@ -117,7 +110,7 @@ Anyway, after clicking the <code>Run App</code> button, you may see the result a
 <p>To deploy your app to the <code>shinyapps.io</code>, follow these steps:</p>
 <p>Click the <code>Publish Application...</code> (Figure 1)</p>
 <div style="text-align: center;">
-<p><img src="03_Shiny_web_app.png" class="centered-img">
+<p><img src="03_Shiny_web_app.png" class="centered-img" onclick="openModal(this.src)">
 <br>
 Figure 1</p>
 </div>
@@ -125,14 +118,14 @@ Figure 1</p>
 but if you haven’t, there will be nothing under the <code>Publish From Account</code>.
 Therefore, click <code>Add New Account</code> (Figure 2).</p>
 <div style="text-align: center;">
-<p><img src="04_Shiny_web_app.png" class="centered-img">
+<p><img src="04_Shiny_web_app.png" class="centered-img" onclick="openModal(this.src)">
 <br>
 Figure 2</p>
 </div>
 <p>In this example, we will learn how to deploy using the <code>ShinyApps.io</code>.
 Click the <code>ShinyApps.io</code> (Figure 3).</p>
 <div style="text-align: center;">
-<p><img src="05_Shiny_web_app.png" class="centered-img">
+<p><img src="05_Shiny_web_app.png" class="centered-img" onclick="openModal(this.src)">
 <br>
 Figure 3</p>
 </div>
@@ -142,7 +135,7 @@ Click on the <code>Get started here</code> or the <code>your account on ShinyApp
 <br>
 (Or click here: <a href="https://www.shinyapps.io/" target="_blank">https://www.shinyapps.io/</a>)</p>
 <div style="text-align: center;">
-<p><img src="06_Shiny_web_app.png" class="centered-img">
+<p><img src="06_Shiny_web_app.png" class="centered-img" onclick="openModal(this.src)">
 <br>
 Figure 4</p>
 </div>
@@ -150,7 +143,7 @@ Figure 4</p>
 Then, the following page should appear first.
 Set the name of your account and click the <code>save</code> button (Figure 5).</p>
 <div style="text-align: center;">
-<p><img src="07_Shiny_web_app.png" class="centered-img">
+<p><img src="07_Shiny_web_app.png" class="centered-img" onclick="openModal(this.src)">
 <br>
 Figure 5</p>
 </div>
@@ -159,20 +152,24 @@ Follow this steps as given the page, you should intall the <code>rsconnect</code
 After installing the package, click the <code>Show secret</code>, and then, the <code>Copy to clipboard</code> (Figure 6).
 Then, copy and paste this clipboard as mentioned in Figure 4, and click the <code>Connect Account</code> in Figure 4.</p>
 <div style="text-align: center;">
-<p><img src="08_Shiny_web_app.png" class="centered-img">
+<p><img src="08_Shiny_web_app.png" class="centered-img" onclick="openModal(this.src)">
 <br>
 Figure 6</p>
 </div>
 <p>You’re almost there! Now, select your <code>account</code>, edit the <code>Title</code>, and finally, click the <code>Publish</code> button! (Figure 7)</p>
 <div style="text-align: center;">
-<p><img src="09_Shiny_web_app.png" class="centered-img">
+<p><img src="09_Shiny_web_app.png" class="centered-img" onclick="openModal(this.src)">
 <br>
 Figure 7</p>
 </div>
 <p>When you return to your account on <code>ShinyApps.io</code>, you will see the apps published to your account (Figure 8).</p>
 <div style="text-align: center;">
-<p><img src="10_Shiny_web_app.png" class="centered-img">
+<p><img src="10_Shiny_web_app.png" class="centered-img" onclick="openModal(this.src)">
 <br>
 Figure 8</p>
+</div>
+<div id="imgModal" class="modal" onclick="closeModal(event)">
+<p><span class="close" onclick="closeModal(event)">×</span>
+<img class="modal-content" id="modalImg" onclick="toggleZoom(event)"></p>
 </div>
 </div>

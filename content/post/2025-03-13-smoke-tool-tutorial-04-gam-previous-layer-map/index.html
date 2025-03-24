@@ -15,13 +15,6 @@ tags: []
 pre code {
     font-size: 14px;
 }
-.centered-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border: 1px solid black;
-  width: auto;
-}
 </style>
 <p>This tutorial is for the “PM2.5 and O3 smoke tool” app, available at (<a href="https://westar.shinyapps.io/PMO3smokeTool/" target="_blank">https://westar.shinyapps.io/PMO3smokeTool/</a>).</p>
 <p>The <code>[GAM previous]</code> tab allows users to explore and understand previously developed GAMs for O3 prediction and related air quality analyses. It includes two main sub-tabs: <code>[Overview]</code> and <code>[Layer map]</code>.
@@ -34,7 +27,7 @@ This functionality helps users assess the performance of various GAM models and 
 <li>Go to <code>[GAM previous]</code> &gt; <code>[Layer map]</code> tab.</li>
 </ol>
 <div style="text-align: center;">
-<p><img src="01_SmokeTool_tutorial_gam_previous_layer_map.png" class="centered-img"></p>
+<p><img src="01_SmokeTool_tutorial_gam_previous_layer_map.png" class="centered-img" onclick="openModal(this.src)"></p>
 </div>
 <hr>
 <ol start="2" style="list-style-type: decimal">
@@ -83,7 +76,7 @@ This functionality helps users assess the performance of various GAM models and 
 </ul></li>
 </ul>
 <div style="text-align: center;">
-<p><img src="02_SmokeTool_tutorial_gam_previous_layer_map.png" class="centered-img"></p>
+<p><img src="02_SmokeTool_tutorial_gam_previous_layer_map.png" class="centered-img" onclick="openModal(this.src)"></p>
 </div>
 <hr>
 <ol start="3" style="list-style-type: decimal">
@@ -103,7 +96,7 @@ To download data for the selected dataset (e.g., <code>GAM v1</code>) and date (
 click the <code>Export data</code> button (blue rectangle).
 For explanations of each parameter, refer to <code>Parameter descriptions</code> (green rectangle).</p>
 <div style="text-align: center;">
-<p><img src="03_SmokeTool_tutorial_gam_previous_layer_map.png" class="centered-img"></p>
+<p><img src="03_SmokeTool_tutorial_gam_previous_layer_map.png" class="centered-img" onclick="openModal(this.src)"></p>
 </div>
 <hr>
 <ol start="4" style="list-style-type: decimal">
@@ -120,16 +113,16 @@ Since values are calculated by AQS site.</li>
 </ul>
 <p>All plots have a download feature. If you want to download, click the <code>download icon</code> in the upper right corner in each plot.</p>
 <div style="text-align: center;">
-<p><img src="04_1_SmokeTool_tutorial_gam_previous_layer_map.png" class="centered-img"></p>
+<p><img src="04_1_SmokeTool_tutorial_gam_previous_layer_map.png" class="centered-img" onclick="openModal(this.src)"></p>
 </div>
 <div style="text-align: center;">
-<p><img src="04_2_SmokeTool_tutorial_gam_previous_layer_map.png" class="centered-img"></p>
+<p><img src="04_2_SmokeTool_tutorial_gam_previous_layer_map.png" class="centered-img" onclick="openModal(this.src)"></p>
 </div>
 <div style="text-align: center;">
-<p><img src="04_3_SmokeTool_tutorial_gam_previous_layer_map.png" class="centered-img"></p>
+<p><img src="04_3_SmokeTool_tutorial_gam_previous_layer_map.png" class="centered-img" onclick="openModal(this.src)"></p>
 </div>
 <div style="text-align: center;">
-<p><img src="04_4_SmokeTool_tutorial_gam_previous_layer_map.png" class="centered-img"></p>
+<p><img src="04_4_SmokeTool_tutorial_gam_previous_layer_map.png" class="centered-img" onclick="openModal(this.src)"></p>
 </div>
 <hr>
 <ol start="5" style="list-style-type: decimal">
@@ -137,10 +130,14 @@ Since values are calculated by AQS site.</li>
 Additionally, changing the dataset or date allows for immediate result comparison.</li>
 </ol>
 <div style="text-align: center;">
-<p><img src="05_SmokeTool_tutorial_gam_previous_layer_map.png" class="centered-img"></p>
+<p><img src="05_SmokeTool_tutorial_gam_previous_layer_map.png" class="centered-img" onclick="openModal(this.src)"></p>
 </div>
 <hr>
 <p>So far, we have introduced how to explore previously developed GAMs for O3 prediction and related air quality analyses spatially.
 In the <code>[Layer Map]</code> sub-tab, users can load data for analysis and customize visualization by selecting point, raster, or HMS layers.
 This functionality enables users to assess the performance of various GAM models and compare different approaches to understanding air quality dynamics, particularly in the context of wildfires.</p>
 <p>All the tutorials are complete. Now explore our app!</p>
+<div id="imgModal" class="modal" onclick="closeModal(event)">
+<p><span class="close" onclick="closeModal(event)">×</span>
+<img class="modal-content" id="modalImg" onclick="toggleZoom(event)"></p>
+</div>

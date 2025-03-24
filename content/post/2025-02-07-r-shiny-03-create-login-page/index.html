@@ -15,13 +15,6 @@ tags: []
 pre code {
     font-size: 14px;
 }
-.centered-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border: 1px solid black;
-  width: auto;
-}
 </style>
 <p>Implementing a typical login page can be quite complex in R shiny.
 Implementing such a typical login page requires handling user information and passwords,
@@ -81,9 +74,9 @@ and the login page UI will be displayed as follows.
 (!Note that we haven’t started the server part yet! So, there is nothing written in the server section.
 You can modify various elements to match your design. Try making some changes and experiment with different settings!)</p>
 <div style="text-align: center;">
-<p><img src="01_Shiny_login_page.png" class="centered-img"></p>
+<p><img src="01_Shiny_login_page.png" class="centered-img" onclick="openModal(this.src)"></p>
 </div>
-<!-- # ```{r, results="asis", echo=FALSE} -->
-<!-- # cat('<iframe src="https://leestory.shinyapps.io/2025-02-07-02-r-shiny-create-login-page/"  -->
-<!-- #       width="100%" height="600px" style="border:none;"></iframe>') -->
-<!-- # ``` -->
+<div id="imgModal" class="modal" onclick="closeModal(event)">
+<p><span class="close" onclick="closeModal(event)">×</span>
+<img class="modal-content" id="modalImg" onclick="toggleZoom(event)"></p>
+</div>

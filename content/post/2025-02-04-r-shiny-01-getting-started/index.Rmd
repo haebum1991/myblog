@@ -13,13 +13,6 @@ tags: []
 pre code {
     font-size: 14px;
 }
-.centered-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border: 1px solid black;
-  width: auto;
-}
 </style>
 
 ## R Shiny
@@ -52,7 +45,7 @@ Please go to the `File` -> `New file` -> `Shiny Web App...` in R studio, then, y
 Type the `Application name` and setup the directory, and please click the `Create` button. 
 
 <div style="text-align: center;">
-  <img src="01_Shiny_web_app.png" class="centered-img">
+  <img src="01_Shiny_web_app.png" class="centered-img" onclick="openModal(this.src)">
 </div>
 
 
@@ -112,7 +105,7 @@ Please follow the steps below figures.
 First, click the `Run App` button and the app will appear on the localhost page.
 
 <div style="text-align: center;">
-  <img src="02_1_Shiny_web_app.png" class="centered-img">
+  <img src="02_1_Shiny_web_app.png" class="centered-img" onclick="openModal(this.src)">
 </div>
 
 
@@ -121,7 +114,7 @@ Therefore, you can use this as a kind of 'preview' to see how it looks before de
 Anyway, after clicking the `Run App` button, you may see the result as given below.
 
 <div style="text-align: center;">
-  <img src="02_2_Shiny_web_app.png" class="centered-img">
+  <img src="02_2_Shiny_web_app.png" class="centered-img" onclick="openModal(this.src)">
 </div>
 
 
@@ -134,7 +127,7 @@ To deploy your app to the `shinyapps.io`, follow these steps:
 Click the `Publish Application...` (Figure 1)
 
 <div style="text-align: center;">
-  <img src="03_Shiny_web_app.png" class="centered-img">
+  <img src="03_Shiny_web_app.png" class="centered-img" onclick="openModal(this.src)">
   <br>
   Figure 1
 </div>
@@ -144,7 +137,7 @@ but if you haven't, there will be nothing under the `Publish From Account`.
 Therefore, click `Add New Account` (Figure 2).
 
 <div style="text-align: center;">
-  <img src="04_Shiny_web_app.png" class="centered-img">
+  <img src="04_Shiny_web_app.png" class="centered-img" onclick="openModal(this.src)">
   <br>
   Figure 2
 </div>
@@ -154,7 +147,7 @@ In this example, we will learn how to deploy using the `ShinyApps.io`.
 Click the `ShinyApps.io` (Figure 3).
 
 <div style="text-align: center;">
-  <img src="05_Shiny_web_app.png" class="centered-img">
+  <img src="05_Shiny_web_app.png" class="centered-img" onclick="openModal(this.src)">
   <br>
   Figure 3
 </div>
@@ -167,7 +160,7 @@ Click on the `Get started here` or the `your account on ShinyApps` link as shown
 (Or click here: <a href="https://www.shinyapps.io/" target="_blank">https://www.shinyapps.io/</a>)
 
 <div style="text-align: center;">
-  <img src="06_Shiny_web_app.png" class="centered-img">
+  <img src="06_Shiny_web_app.png" class="centered-img" onclick="openModal(this.src)">
   <br>
   Figure 4
 </div>
@@ -178,7 +171,7 @@ Then, the following page should appear first.
 Set the name of your account and click the `save` button (Figure 5).
 
 <div style="text-align: center;">
-  <img src="07_Shiny_web_app.png" class="centered-img">
+  <img src="07_Shiny_web_app.png" class="centered-img" onclick="openModal(this.src)">
   <br>
   Figure 5
 </div>
@@ -190,7 +183,7 @@ After installing the package, click the `Show secret`, and then, the `Copy to cl
 Then, copy and paste this clipboard as mentioned in Figure 4, and click the `Connect Account` in Figure 4.
 
 <div style="text-align: center;">
-  <img src="08_Shiny_web_app.png" class="centered-img">
+  <img src="08_Shiny_web_app.png" class="centered-img" onclick="openModal(this.src)">
   <br>
   Figure 6
 </div>
@@ -199,7 +192,7 @@ Then, copy and paste this clipboard as mentioned in Figure 4, and click the `Con
 You're almost there! Now, select your `account`, edit the `Title`, and finally, click the `Publish` button! (Figure 7)
 
 <div style="text-align: center;">
-  <img src="09_Shiny_web_app.png" class="centered-img">
+  <img src="09_Shiny_web_app.png" class="centered-img" onclick="openModal(this.src)">
   <br>
   Figure 7
 </div>
@@ -208,7 +201,12 @@ You're almost there! Now, select your `account`, edit the `Title`, and finally, 
 When you return to your account on `ShinyApps.io`, you will see the apps published to your account (Figure 8).
 
 <div style="text-align: center;">
-  <img src="10_Shiny_web_app.png" class="centered-img">
+  <img src="10_Shiny_web_app.png" class="centered-img" onclick="openModal(this.src)">
   <br>
   Figure 8
+</div>
+
+<div id="imgModal" class="modal" onclick="closeModal(event)">
+  <span class="close" onclick="closeModal(event)">&times;</span>
+  <img class="modal-content" id="modalImg" onclick="toggleZoom(event)">
 </div>

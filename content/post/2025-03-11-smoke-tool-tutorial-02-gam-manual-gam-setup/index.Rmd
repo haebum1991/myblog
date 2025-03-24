@@ -13,13 +13,6 @@ tags: []
 pre code {
     font-size: 14px;
 }
-.centered-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border: 1px solid black;
-  width: auto;
-}
 </style>
 
 This tutorial is for the "PM2.5 and O3 smoke tool" app, available at ([https://westar.shinyapps.io/PMO3smokeTool/](https://westar.shinyapps.io/PMO3smokeTool/){target="_blank"}).
@@ -34,7 +27,7 @@ In this post, we introduce how to use `[GAM setup]` sub-tab in `[GAM manual]` ta
 1. Go to `[GAM manual]` > `[Load dataset]` tab.
 
 <div style="text-align: center;">
-  <img src="01_SmokeTool_tutorial_gam_manual_gam_setup.png" class="centered-img">
+  <img src="01_SmokeTool_tutorial_gam_manual_gam_setup.png" class="centered-img" onclick="openModal(this.src)">
 </div>
 
 <hr>
@@ -59,7 +52,7 @@ Note that when you import the data, `[GAM setup]` sub-tab is activated
 </p>
 
 <div style="text-align: center;">
-  <img src="02_SmokeTool_tutorial_gam_manual_gam_setup.png" class="centered-img">
+  <img src="02_SmokeTool_tutorial_gam_manual_gam_setup.png" class="centered-img" onclick="openModal(this.src)">
 </div>
 
 <hr>
@@ -76,7 +69,7 @@ For more details, refer to the `mgcv` package
 
 
 <div style="text-align: center;">
-  <img src="03_SmokeTool_tutorial_gam_manual_gam_setup.png" class="centered-img">
+  <img src="03_SmokeTool_tutorial_gam_manual_gam_setup.png" class="centered-img" onclick="openModal(this.src)">
 </div>
 
 <hr>
@@ -98,7 +91,7 @@ Once all settings are complete, click the `Run GAM` button (green rectangle).
 Modeling begins the moment you click, and can take anywhere from a few seconds to a few minutes depending on the amount of data.
 
 <div style="text-align: center;">
-  <img src="04_SmokeTool_tutorial_gam_manual_gam_setup.png" class="centered-img">
+  <img src="04_SmokeTool_tutorial_gam_manual_gam_setup.png" class="centered-img" onclick="openModal(this.src)">
 </div>
 
 <hr>
@@ -112,11 +105,11 @@ This tab consists of several results including `GAM summary`, `GAM check`, `GAM 
 If you want to download the data, you just click the `Save data` button in the data table box.
 
 <div style="text-align: center;">
-  <img src="05_SmokeTool_tutorial_gam_manual_gam_setup.png" class="centered-img">
+  <img src="05_SmokeTool_tutorial_gam_manual_gam_setup.png" class="centered-img" onclick="openModal(this.src)">
 </div>
 
 <div style="text-align: center;">
-  <img src="06_SmokeTool_tutorial_gam_manual_gam_setup.png" class="centered-img">
+  <img src="06_SmokeTool_tutorial_gam_manual_gam_setup.png" class="centered-img" onclick="openModal(this.src)">
 </div>
 
 <hr>
@@ -125,3 +118,8 @@ The GAM provided in this app may be more limited compared to running it directly
 It is recommended to use it as a reference, while performing more extensive analyses directly in R.
 
 In the next post, we will introduce how to explore and understand previously developed GAMs for O3 prediction and related air quality analyses in the `[GAM previous]` tab.
+
+<div id="imgModal" class="modal" onclick="closeModal(event)">
+  <span class="close" onclick="closeModal(event)">&times;</span>
+  <img class="modal-content" id="modalImg" onclick="toggleZoom(event)">
+</div>

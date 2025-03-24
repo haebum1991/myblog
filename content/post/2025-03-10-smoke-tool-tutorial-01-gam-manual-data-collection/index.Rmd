@@ -13,13 +13,6 @@ tags: []
 pre code {
     font-size: 14px;
 }
-.centered-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border: 1px solid black;
-  width: auto;
-}
 </style>
 
 This tutorial is for the "PM2.5 and O3 smoke tool" app, available at ([https://westar.shinyapps.io/PMO3smokeTool/](https://westar.shinyapps.io/PMO3smokeTool/){target="_blank"}).
@@ -34,7 +27,7 @@ In this post, we introduce how to use `[Data collection]` sub-tab in `[GAM manua
 1. Go to `[GAM manual]` > `[Data collection]` tab.
 
 <div style="text-align: center;">
-  <img src="01_SmokeTool_tutorial_gam_manual_data_collection.png" class="centered-img">
+  <img src="01_SmokeTool_tutorial_gam_manual_data_collection.png" class="centered-img" onclick="openModal(this.src)">
 </div>
 
 <hr>
@@ -52,7 +45,7 @@ please visit EPA website ([here](https://aqs.epa.gov/aqsweb/airdata/download_fil
 ([here](https://cran.r-project.org/web/packages/riem/index.html){target="_blank"}).
 
 <div style="text-align: center;">
-  <img src="02_SmokeTool_tutorial_gam_manual_data_collection.png" class="centered-img">
+  <img src="02_SmokeTool_tutorial_gam_manual_data_collection.png" class="centered-img" onclick="openModal(this.src)">
 </div>
 
 <hr>
@@ -61,7 +54,7 @@ If you want to find out information about a site, simply place your mouse cursor
 You can then look at detailed site information including `state`, `site name`, `AQS code`, etc. 
 
 <div style="text-align: center;">
-  <img src="03_SmokeTool_tutorial_gam_manual_data_collection.png" class="centered-img">
+  <img src="03_SmokeTool_tutorial_gam_manual_data_collection.png" class="centered-img" onclick="openModal(this.src)">
 </div>
 
 <hr>
@@ -69,7 +62,7 @@ You can then look at detailed site information including `state`, `site name`, `
 This feature only applies to EPA AQS sites.
 
 <div style="text-align: center;">
-  <img src="04_SmokeTool_tutorial_gam_manual_data_collection.png" class="centered-img">
+  <img src="04_SmokeTool_tutorial_gam_manual_data_collection.png" class="centered-img" onclick="openModal(this.src)">
 </div>
 
 <hr>
@@ -78,7 +71,7 @@ When typing, you can also check the list below to see what data is available for
 And then, when you click the `map icon`, the site location will be displayed on the map.
 
 <div style="text-align: center;">
-  <img src="05_SmokeTool_tutorial_gam_manual_data_collection.png" class="centered-img">
+  <img src="05_SmokeTool_tutorial_gam_manual_data_collection.png" class="centered-img" onclick="openModal(this.src)">
 </div>
 
 <hr>
@@ -88,7 +81,7 @@ In the same way, PM2.5 and ASOS sites can also be added.
 Note that if you want to clear the list, click the `Clear list` button.
 
 <div style="text-align: center;">
-  <img src="06_SmokeTool_tutorial_gam_manual_data_collection.png" class="centered-img">
+  <img src="06_SmokeTool_tutorial_gam_manual_data_collection.png" class="centered-img" onclick="openModal(this.src)">
 </div>
 
 <hr>
@@ -98,7 +91,7 @@ You should receive an email with your EPA API key within a few minutes.
 If you want to know detailed instructions, please visit the EPA API official website ([here](https://aqs.epa.gov/aqsweb/documents/data_api.html#signup){target="_blank"}).
 
 <div style="text-align: center;">
-  <img src="07_SmokeTool_tutorial_gam_manual_data_collection.png" class="centered-img">
+  <img src="07_SmokeTool_tutorial_gam_manual_data_collection.png" class="centered-img" onclick="openModal(this.src)">
 </div>
 
 <hr>
@@ -109,14 +102,14 @@ Once everything is complete, click the `Run collection` button. The data collect
 depending on the period.
 
 <div style="text-align: center;">
-  <img src="08_SmokeTool_tutorial_gam_manual_data_collection.png" class="centered-img">
+  <img src="08_SmokeTool_tutorial_gam_manual_data_collection.png" class="centered-img" onclick="openModal(this.src)">
 </div>
 
 <hr>
 9. Once data collection is complete, the collected data will be displayed in the box below (`O3 data`, `PM2.5 data`, and/or `ASOS data`). If you want to download the collected data, you just click on the `Save data` button for each data type.
 
 <div style="text-align: center;">
-  <img src="09_SmokeTool_tutorial_gam_manual_data_collection.png" class="centered-img">
+  <img src="09_SmokeTool_tutorial_gam_manual_data_collection.png" class="centered-img" onclick="openModal(this.src)">
 </div>
 
 <hr>
@@ -126,7 +119,7 @@ depending on the period.
 - If O3 data are invalid or unavailable, the nearest ASOS data based on the PM2.5 measurement site will be merged.
 
 <div style="text-align: center;">
-  <img src="10_SmokeTool_tutorial_gam_manual_data_collection.png" class="centered-img">
+  <img src="10_SmokeTool_tutorial_gam_manual_data_collection.png" class="centered-img" onclick="openModal(this.src)">
 </div>
 
 <hr>
@@ -140,7 +133,7 @@ Then, the processed data, including the `HMS` and `PM2.5-criteria` columns, will
 If you want to download the data, click the `Save data` button.
 
 <div style="text-align: center;">
-  <img src="11_SmokeTool_tutorial_gam_manual_data_collection.png" class="centered-img">
+  <img src="11_SmokeTool_tutorial_gam_manual_data_collection.png" class="centered-img" onclick="openModal(this.src)">
 </div>
 
 <hr>
@@ -148,3 +141,8 @@ So far, we have introduced the process of collecting PM2.5, O3, and meteorologic
 Now, you can use the collected data for further data analysis.
 
 In the next post, we will explore how to perform GAM (Generalized Additive Model) analysis using the collected data in the `[GAM setup]` sub-tab.
+
+<div id="imgModal" class="modal" onclick="closeModal(event)">
+  <span class="close" onclick="closeModal(event)">&times;</span>
+  <img class="modal-content" id="modalImg" onclick="toggleZoom(event)">
+</div>
