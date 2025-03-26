@@ -33,7 +33,9 @@ library(htmltools)
 ```
 
 
-Let's combine the two constructed syntax described in previous sections: "R shiny [02]: Dashboard UI" and "R shiny [03]: Create login page".
+Let's combine the two constructed syntax described in previous sections:
+"[R shiny [02]: Dashboard UI](https://leestory.netlify.app/2025/r-shiny-02-dashboard-ui/)" and 
+"[R shiny [03]: Create login page](https://leestory.netlify.app/2025/r-shiny-03-create-login-page/)".
 
 
 ```{r, eval=FALSE}
@@ -318,7 +320,7 @@ shinyApp(ui = ui,
 ```
 
 
-By testing the final output below, you can verify that clicking the [Go to App] button on the `login_page` and the [Logout] button on the `ui_main_page` successfully triggers the screen transition.
+By testing the final output below, you can verify that clicking the `[Go to App]` button on the `login_page` and the `[Logout]` button on the `ui_main_page` successfully triggers the screen transition.
 
 ```{r, results="asis", echo = F}
 cat('<iframe src="https://leestory.shinyapps.io/2025-02-10-03-r-shiny-hide-show-login-page/"
