@@ -20,6 +20,9 @@ This blog section will walk you through the step-by-step process of how the GAM 
 Please note that your R environment and package versions may differ from mine. 
 Today's topic will cover how the basic UI was set up.
 
+<hr>
+## Install and import required pacakges
+
 To begin, let's set up a simple `shiny` application with a basic UI and server structure.
 Before creating the app, ensure you have the necessary libraries installed. If not, you can install them using:
 
@@ -32,13 +35,16 @@ library(shinydashboard)
 library(htmltools)
 ```
 
-`shiny` is the core package for building interactive web applications in R, allowing users to create dynamic, user-friendly interfaces without needing extensive web development knowledge.
+- `shiny` is the core package for building interactive web applications in R, allowing users to create dynamic, user-friendly interfaces without needing extensive web development knowledge.
 
-`shinydashboard` enhances Shiny applications by providing a structured and customizable dashboard layout, making it easier to design professional-looking interfaces with sidebar menus, tabbed content, and dynamic UI components.
+- `shinydashboard` enhances Shiny applications by providing a structured and customizable dashboard layout, making it easier to design professional-looking interfaces with sidebar menus, tabbed content, and dynamic UI components.
 
-`shinyjs` extends Shiny’s capabilities by allowing JavaScript interactions without writing JavaScript code, enabling features like hiding/showing elements, disabling/enabling inputs, running JavaScript functions, and modifying UI elements dynamically.
+- `shinyjs` extends Shiny’s capabilities by allowing JavaScript interactions without writing JavaScript code, enabling features like hiding/showing elements, disabling/enabling inputs, running JavaScript functions, and modifying UI elements dynamically.
 
-`htmltools` helps generate, manage, and customize HTML content in R, enabling users to create structured web elements, embed dependencies, and integrate HTML components into Shiny, R Markdown, and other web-based outputs.
+- `htmltools` helps generate, manage, and customize HTML content in R, enabling users to create structured web elements, embed dependencies, and integrate HTML components into Shiny, R Markdown, and other web-based outputs.
+
+<hr>
+## Basic structure of Shiny app
 
 The basic structure of a shiny app consists of UI (frontend) and server (backend), 
 and after setting the UI and server, you can check the app using `shinyApp()` function as given below:
@@ -49,7 +55,9 @@ server <- function(input, output, session) {}
 shiny::shinyApp(ui = ui, server = server)
 ```
 
-<br>
+<hr>
+## Create Shiny app dashboard
+
 Let's make a simple example using `shinydashboard` package. 
 When you run below code, you can see the blank page with blue colored dashboard.
 

@@ -30,7 +30,7 @@ R Shiny is a game-changer for those who want to create **interactive application
 
 <hr>
 
-## Shiny installation and load
+## Install and import shiny pacakge
 
 ```{r, eval = F}
 install.packages("shiny")

@@ -6,8 +6,15 @@
     <description>Recent content in R-Shiny on Leestory</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Mon, 10 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 27 Mar 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="//localhost:4321/categories/r-shiny/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>R shiny [05]: Interactive maps using Leaflet</title>
+      <link>//localhost:4321/2025/r-shiny-05-interactive-maps-using-leaflet/</link>
+      <pubDate>Thu, 27 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:4321/2025/r-shiny-05-interactive-maps-using-leaflet/</guid>
+      <description>&lt;style&gt;&#xD;&#xA;pre code {&#xD;&#xA;    font-size: 14px;&#xD;&#xA;}&#xD;&#xA;&lt;/style&gt;&#xD;&#xA;&lt;div id=&#34;leaflet&#34; class=&#34;section level2&#34;&gt;&#xD;&#xA;&lt;h2&gt;Leaflet&lt;/h2&gt;&#xD;&#xA;&lt;p&gt;The &lt;strong&gt;Leaflet&lt;/strong&gt; package in R is a powerful tool for creating interactive web maps directly from R code, leveraging the popular open-source &lt;strong&gt;JavaScript library Leaflet.js&lt;/strong&gt;&#xD;&#xA;(&lt;a href=&#34;https://leafletjs.com/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;).&#xD;&#xA;It allows users to overlay data points, polygons, raster images, and other geospatial data on customizable basemaps, supporting features like zooming, panning, popups, color scales, and layer controls. Leaflet integrates seamlessly with spatial objects in R (e.g., &lt;code&gt;sf&lt;/code&gt;, &lt;code&gt;sp&lt;/code&gt;, &lt;code&gt;raster&lt;/code&gt;, &lt;code&gt;terra&lt;/code&gt;), making it especially useful for visualizing spatial data in R Shiny apps, reports, and dashboards.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>R shiny [04]: Hide/Show login page</title>
       <link>//localhost:4321/2025/r-shiny-04-hide-show-login-page/</link>
@@ -27,7 +34,7 @@
       <link>//localhost:4321/2025/r-shiny-02-dashboard-ui/</link>
       <pubDate>Wed, 05 Feb 2025 00:00:00 +0000</pubDate>
       <guid>//localhost:4321/2025/r-shiny-02-dashboard-ui/</guid>
-      <description>&lt;style&gt;&#xD;&#xA;pre code {&#xD;&#xA;    font-size: 14px;&#xD;&#xA;}&#xD;&#xA;&lt;/style&gt;&#xD;&#xA;&lt;p&gt;R shiny is a very useful and versatile tool to build your own app using R.&#xD;&#xA;This blog section will walk you through the step-by-step process of how the GAM tool app was built.&#xD;&#xA;Please note that your R environment and package versions may differ from mine.&#xD;&#xA;Today’s topic will cover how the basic UI was set up.&lt;/p&gt;&#xD;&#xA;&lt;p&gt;To begin, let’s set up a simple &lt;code&gt;shiny&lt;/code&gt; application with a basic UI and server structure.&#xD;&#xA;Before creating the app, ensure you have the necessary libraries installed. If not, you can install them using:&lt;/p&gt;</description>
+      <description>&lt;style&gt;&#xD;&#xA;pre code {&#xD;&#xA;    font-size: 14px;&#xD;&#xA;}&#xD;&#xA;&lt;/style&gt;&#xD;&#xA;&lt;p&gt;R shiny is a very useful and versatile tool to build your own app using R.&#xD;&#xA;This blog section will walk you through the step-by-step process of how the GAM tool app was built.&#xD;&#xA;Please note that your R environment and package versions may differ from mine.&#xD;&#xA;Today’s topic will cover how the basic UI was set up.&lt;/p&gt;&#xD;&#xA;&lt;hr&gt;&#xD;&#xA;&lt;div id=&#34;install-and-import-required-pacakges&#34; class=&#34;section level2&#34;&gt;&#xD;&#xA;&lt;h2&gt;Install and import required pacakges&lt;/h2&gt;&#xD;&#xA;&lt;p&gt;To begin, let’s set up a simple &lt;code&gt;shiny&lt;/code&gt; application with a basic UI and server structure.&#xD;&#xA;Before creating the app, ensure you have the necessary libraries installed. If not, you can install them using:&lt;/p&gt;</description>
     </item>
     <item>
       <title>R shiny [01]: Getting started</title>

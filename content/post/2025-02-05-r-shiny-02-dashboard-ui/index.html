@@ -20,6 +20,9 @@ pre code {
 This blog section will walk you through the step-by-step process of how the GAM tool app was built.
 Please note that your R environment and package versions may differ from mine.
 Today’s topic will cover how the basic UI was set up.</p>
+<hr>
+<div id="install-and-import-required-pacakges" class="section level2">
+<h2>Install and import required pacakges</h2>
 <p>To begin, let’s set up a simple <code>shiny</code> application with a basic UI and server structure.
 Before creating the app, ensure you have the necessary libraries installed. If not, you can install them using:</p>
 <pre class="r"><code># Please install these packages before import them.
@@ -28,17 +31,26 @@ library(shiny)
 library(shinyjs)
 library(shinydashboard)
 library(htmltools)</code></pre>
-<p><code>shiny</code> is the core package for building interactive web applications in R, allowing users to create dynamic, user-friendly interfaces without needing extensive web development knowledge.</p>
-<p><code>shinydashboard</code> enhances Shiny applications by providing a structured and customizable dashboard layout, making it easier to design professional-looking interfaces with sidebar menus, tabbed content, and dynamic UI components.</p>
-<p><code>shinyjs</code> extends Shiny’s capabilities by allowing JavaScript interactions without writing JavaScript code, enabling features like hiding/showing elements, disabling/enabling inputs, running JavaScript functions, and modifying UI elements dynamically.</p>
-<p><code>htmltools</code> helps generate, manage, and customize HTML content in R, enabling users to create structured web elements, embed dependencies, and integrate HTML components into Shiny, R Markdown, and other web-based outputs.</p>
+<ul>
+<li><p><code>shiny</code> is the core package for building interactive web applications in R, allowing users to create dynamic, user-friendly interfaces without needing extensive web development knowledge.</p></li>
+<li><p><code>shinydashboard</code> enhances Shiny applications by providing a structured and customizable dashboard layout, making it easier to design professional-looking interfaces with sidebar menus, tabbed content, and dynamic UI components.</p></li>
+<li><p><code>shinyjs</code> extends Shiny’s capabilities by allowing JavaScript interactions without writing JavaScript code, enabling features like hiding/showing elements, disabling/enabling inputs, running JavaScript functions, and modifying UI elements dynamically.</p></li>
+<li><p><code>htmltools</code> helps generate, manage, and customize HTML content in R, enabling users to create structured web elements, embed dependencies, and integrate HTML components into Shiny, R Markdown, and other web-based outputs.</p></li>
+</ul>
+<hr>
+</div>
+<div id="basic-structure-of-shiny-app" class="section level2">
+<h2>Basic structure of Shiny app</h2>
 <p>The basic structure of a shiny app consists of UI (frontend) and server (backend),
 and after setting the UI and server, you can check the app using <code>shinyApp()</code> function as given below:</p>
 <pre class="r"><code>ui &lt;- fluidPage()
 server &lt;- function(input, output, session) {}
 shiny::shinyApp(ui = ui, server = server)</code></pre>
-<p><br>
-Let’s make a simple example using <code>shinydashboard</code> package.
+<hr>
+</div>
+<div id="create-shiny-app-dashboard" class="section level2">
+<h2>Create Shiny app dashboard</h2>
+<p>Let’s make a simple example using <code>shinydashboard</code> package.
 When you run below code, you can see the blank page with blue colored dashboard.</p>
 <pre class="r"><code>ui &lt;- fluidPage(
   dashboardPage(
@@ -158,4 +170,5 @@ Next time you’ll learn how to utilize these.</p>
 <div id="imgModal" class="modal" onclick="closeModal(event)">
 <p><span class="close" onclick="closeModal(event)">×</span>
 <img class="modal-content" id="modalImg" onclick="toggleZoom(event)"></p>
+</div>
 </div>

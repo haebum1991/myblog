@@ -26,6 +26,8 @@ from the login page to the main UI page by simply entering their email address.
 Furthermore, you can even have your visitors receive a notification 
 via email as soon as they enter their email address.
 
+<hr>
+## Install and import required pacakges
 
 ```{r, eval=FALSE}
 # Please install these packages before import them.
@@ -35,6 +37,9 @@ library(shinyjs)
 library(shinydashboard)
 library(htmltools)
 ```
+
+<hr>
+## Create login page
 
 The following R Shiny code creates a simple login page UI. 
 It allows users to input their email (required) and affiliation (optional) before clicking the "Go to app" button to proceed.

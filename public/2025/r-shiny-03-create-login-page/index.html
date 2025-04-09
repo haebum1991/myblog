@@ -220,10 +220,14 @@ document.addEventListener("DOMContentLoaded", function () {
               
                   
               
-
+                  
               
 
               
+
+              
+              
+                  
               
                   
               
@@ -286,12 +290,19 @@ More precisely, it might be more appropriate to call it a simulated login page.<
 from the login page to the main UI page by simply entering their email address.
 Furthermore, you can even have your visitors receive a notification
 via email as soon as they enter their email address.</p>
+<hr>
+<div id="install-and-import-required-pacakges" class="section level2">
+<h2>Install and import required pacakges</h2>
 <pre class="r"><code># Please install these packages before import them.
 # Load packages
 library(shiny)
 library(shinyjs)
 library(shinydashboard)
 library(htmltools)</code></pre>
+<hr>
+</div>
+<div id="create-login-page" class="section level2">
+<h2>Create login page</h2>
 <p>The following R Shiny code creates a simple login page UI.
 It allows users to input their email (required) and affiliation (optional) before clicking the “Go to app” button to proceed.</p>
 <pre class="r"><code>ui &lt;- fluidPage(
@@ -341,6 +352,7 @@ You can modify various elements to match your design. Try making some changes an
 <p><span class="close" onclick="closeModal(event)">×</span>
 <img class="modal-content" id="modalImg" onclick="toggleZoom(event)"></p>
 </div>
+</div>
 
             </div>
         </article>
@@ -379,7 +391,7 @@ You can modify various elements to match your design. Try making some changes an
     <ul>
         
         <li>
-            <a href="/categories/r-shiny">r-shiny</a> (4)
+            <a href="/categories/r-shiny">r-shiny</a> (5)
         </li>
         
         <li>

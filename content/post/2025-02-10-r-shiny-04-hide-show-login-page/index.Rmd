@@ -21,6 +21,9 @@ allowing a seamless transition from the login page to the main page.
 This content includes the necessary information for the `server` section.
 The main focus of this post is to explain the transition of the login page using `actionButton()`. The part where the user enters an email and proceeds will not be covered in this post.
 
+<hr>
+## Install and import required pacakges
+
 As always, import the required packages.
 
 ```{r, eval=FALSE}
@@ -32,6 +35,8 @@ library(shinydashboard)
 library(htmltools)
 ```
 
+<hr>
+## Create login and main UI pages
 
 Let's combine the two constructed syntax described in previous sections:
 "[R shiny [02]: Dashboard UI](https://leestory.netlify.app/2025/r-shiny-02-dashboard-ui/)" and 
@@ -127,6 +132,8 @@ If you run the app in this state, both the `div(id = "login_page", ...)` and `di
   <img src="01_Shiny_hide_show_login_page.png" class="centered-img" onclick="openModal(this.src)">
 </div>
 
+<hr>
+## Add hide/show function to the login page
 
 Therefore, when the app first opens, only the `login_page` should be visible. 
 To achieve this, we need to use the `shinyjs::hidden()` function.
@@ -319,6 +326,8 @@ shinyApp(ui = ui,
          server = server)
 ```
 
+<hr>
+## App test
 
 By testing the final output below, you can verify that clicking the `[Go to App]` button on the `login_page` and the `[Logout]` button on the `ui_main_page` successfully triggers the screen transition.
 
